@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO ─────────────────────────────────────────────────────── -->
+  <title>IDI Aquitaine – Diagnostic Immobilier & Infiltrométrie | Gironde, Bordeaux, Médoc</title>
+  <meta name="description" content="IDI Aquitaine – Jérémie Autet, expert certifié en diagnostic immobilier, infiltrométrie RT2012/RE2020 et recherche de fuite d'eau non destructive. Intervient à Bordeaux, Gironde et dans le Médoc. Devis gratuit sous 2h." />
+  <!-- ⚠️ Remplacer par l'URL réelle du site avant la mise en ligne -->
+  <link rel="canonical" href="https://idi-aquitaine.fr/" />
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Open Graph ──────────────────────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://idi-aquitaine.fr/" />
+  <meta property="og:title"       content="IDI Aquitaine – Diagnostic Immobilier & Infiltrométrie | Gironde" />
+  <meta property="og:description" content="Jérémie Autet, expert certifié en diagnostic immobilier, infiltrométrie RT2012/RE2020 et recherche de fuite en Gironde. Devis gratuit sous 2h." />
+  <meta property="og:image"       content="https://idi-aquitaine.fr/logo.png" />
+  <meta property="og:locale"      content="fr_FR" />
+  <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- Google Analytics 4 ────────────────────────────────────────── -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Fonts ───────────────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org LocalBusiness ────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "IDI Aquitaine",
+    "description": "Diagnostic immobilier, infiltrométrie RT2012/RE2020 et recherche de fuite d'eau non destructive en Gironde.",
+    "url": "https://idi-aquitaine.fr",
+    "telephone": "+33664484205",
+    "email": "idiaquitaine@outlook.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Saint-Laurent-de-Médoc",
+      "addressRegion": "Gironde",
+      "postalCode": "33112",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["Gironde", "Médoc", "Bordeaux"],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "reviewCount": "3"
+    },
+    "image": "https://idi-aquitaine.fr/logo.png",
+    "priceRange": "€€",
+    "sameAs": [
+      "https://www.facebook.com/p/IDI-Aquitaine-J%C3%A9r%C3%A9mie-Autet-100089890814915/"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── SVG Icons Styles ── */
+    .svg-icon {
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
+
+    /* ── Reset & Variables ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #f5f4f0;
+      --bg-alt:    #ffffff;
+      --dark:      #1c1c1c;
+      --text:      #2a2a2a;
+      --muted:     #6b6b6b;
+      --grey:      rgba(255,255,255,0.5);
+      --card:      #ffffff;
+      --border:    rgba(0,0,0,0.09);
+      --shadow:    0 2px 16px rgba(0,0,0,0.07);
+      --red:       #d91a0e;
+      --orange:    #e8711a;
+      --yellow:    #c9a800;
+      --green:     #2e9e20;
+      --whatsapp:  #25d366;
+      --radius:    14px;
+      --grad:      linear-gradient(90deg, #2e9e20, #c9a800, #e8711a, #d91a0e);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ── Gradient bar ── */
+    .grad-bar { height: 4px; background: var(--grad); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 95px;
+      position: relative;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a {
+      font-size: 0.88rem; font-weight: 500; letter-spacing: .02em;
+      color: var(--muted); transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--dark); }
+    .nav-cta {
+      background: var(--red); color: #fff !important;
+      padding: 9px 22px; border-radius: 50px; font-weight: 600 !important;
+      transition: opacity .2s !important;
+    }
+    .nav-cta:hover { opacity: .85; }
+
+    .nav-burger {
+      display: none; cursor: pointer; flex-direction: column; gap: 5px;
+      background: none; border: none; padding: 6px;
+    }
+    .nav-burger span { width: 25px; height: 2px; background: var(--dark); border-radius: 2px; display: block; transition: all .3s; }
+
+    /* Mobile menu open state */
+    .nav-links.is-open {
+      display: flex; flex-direction: column;
+      position: absolute; top: 68px; left: 0; right: 0;
+      background: #fff; padding: 20px 24px; gap: 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      z-index: 101;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 100px 24px 60px;
+      background: var(--bg-alt);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 70% at 90% 40%, rgba(46,158,32,.07), transparent),
+                  radial-gradient(ellipse 50% 60% at 10% 90%, rgba(217,26,14,.06), transparent);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; top: 0; right: -120px;
+      width: 460px; height: 100%;
+      background: linear-gradient(160deg, rgba(217,26,14,.04) 0%, rgba(232,113,26,.06) 50%, rgba(201,168,0,.04) 100%);
+      transform: skewX(-8deg);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1200px; margin: auto; width: 100%;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(46,158,32,.08); border: 1px solid rgba(46,158,32,.2);
+      border-radius: 50px; padding: 6px 16px; font-size: .78rem;
+      color: var(--green); margin-bottom: 24px; font-weight: 500;
+    }
+    .hero-tag .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+
+    .hero h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 800; line-height: 1.1;
+      color: var(--dark); margin-bottom: 22px; letter-spacing: -.01em;
+    }
+    .hero h1 .accent { color: var(--red); }
+    .hero h1 .underline { position: relative; display: inline-block; }
+    .hero h1 .underline::after {
+      content: '';
+      position: absolute; left: 0; bottom: -4px;
+      width: 100%; height: 4px;
+      background: var(--grad); border-radius: 2px;
+    }
+
+    .hero > .hero-inner > .hero-left > p {
+      color: var(--muted); font-size: 1.05rem; margin-bottom: 28px; max-width: 460px;
+    }
+
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 22px; }
+
+    .hero-phone {
+      display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    }
+    .hero-phone a {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.45rem; font-weight: 800; color: var(--dark);
+      letter-spacing: -.01em; transition: color .2s;
+    }
+    .hero-phone a:hover { color: var(--red); }
+    .hero-phone-note {
+      font-size: .78rem; font-weight: 500;
+      background: rgba(46,158,32,.08); border: 1px solid rgba(46,158,32,.2);
+      border-radius: 50px; padding: 4px 12px; color: var(--green);
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: 50px; font-weight: 600; font-size: .95rem;
+      transition: all .25s; cursor: pointer; border: none;
+    }
+    .btn-primary { background: var(--red); color: #fff; box-shadow: 0 4px 16px rgba(217,26,14,.3); }
+    .btn-primary:hover { background: #bb1508; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(217,26,14,.4); }
+    .btn-outline { background: transparent; color: var(--dark); border: 1.5px solid rgba(0,0,0,0.2); }
+    .btn-outline:hover { background: rgba(0,0,0,0.04); transform: translateY(-2px); }
+
+    .hero-visual { display: flex; flex-direction: column; gap: 16px; }
+    .hero-cards-grid { display: grid; gap: 14px; }
+    .hero-card {
+      background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius);
+      padding: 22px 18px; box-shadow: var(--shadow);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .hero-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(0,0,0,0.1); }
+    .hero-card .hc-title { font-weight: 700; font-size: .95rem; margin-bottom: 4px; color: var(--dark); }
+    .hero-card .hc-sub { font-size: .78rem; color: var(--muted); }
+
+    .hero-stats {
+      background: var(--dark); border-radius: var(--radius);
+      padding: 22px 24px; display: flex; justify-content: space-around;
+    }
+    .hero-stat .hs-num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.9rem; font-weight: 800; color: #fff; }
+    .hero-stat .hs-label { font-size: .75rem; color: rgba(255,255,255,0.55); margin-top: 2px; }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 90px 24px; }
+    .section-inner { max-width: 1200px; margin: auto; }
+    .section-tag {
+      display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .09em;
+      text-transform: uppercase; color: var(--red); margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800;
+      line-height: 1.15; margin-bottom: 16px; color: var(--dark);
+    }
+    .section-sub { color: var(--muted); font-size: 1rem; max-width: 560px; margin-bottom: 50px; }
+
+    /* ── SERVICES ── */
+    .services-bg { background: var(--bg); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .service-card {
+      background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius);
+      padding: 32px 26px; box-shadow: var(--shadow);
+      transition: transform .25s, box-shadow .25s;
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+    .sc-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--dark); }
+    .sc-sub { font-size: .85rem; color: var(--muted); margin-bottom: 20px; }
+    .sc-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .sc-list li { display: flex; align-items: flex-start; gap: 10px; font-size: .85rem; color: var(--text); }
+    .sc-list li::before { content: '›'; color: var(--red); font-weight: 700; margin-top: 1px; font-size: 1rem; }
+    .sc-badge {
+      margin-top: 22px; display: inline-block;
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 50px; padding: 5px 14px; font-size: .72rem; color: var(--muted);
+    }
+
+    /* ── POURQUOI NOUS ── */
+    .pourquoi-bg { background: var(--bg-alt); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .why-list { display: flex; flex-direction: column; gap: 24px; margin-top: 30px; }
+    .why-item { display: flex; gap: 18px; align-items: flex-start; }
+    .why-item .wi-icon {
+      width: 46px; height: 46px; min-width: 46px; border-radius: 10px;
+      background: rgba(46,158,32,.1); border: 1px solid rgba(46,158,32,.2);
+      display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+    }
+    .wi-title { font-weight: 700; margin-bottom: 4px; color: var(--dark); }
+    .wi-desc { font-size: .85rem; color: var(--muted); }
+    .why-visual {
+      background: var(--dark); border-radius: var(--radius);
+      padding: 40px; display: flex; flex-direction: column; gap: 18px;
+    }
+    .cert-item {
+      display: flex; align-items: center; gap: 16px;
+      background: rgba(255,255,255,0.07); border-radius: 10px; padding: 16px 20px;
+    }
+    .cert-icon { font-size: 1.8rem; }
+    .cert-name { font-weight: 600; font-size: .9rem; color: #fff; }
+    .cert-desc { font-size: .78rem; color: rgba(255,255,255,0.5); }
+
+    /* ── RÉALISATIONS ── */
+    .realisations-bg { background: var(--bg); }
+    .real-cta { text-align: center; margin-top: 40px; }
+
+    /* ── AVIS ── */
+    .avis-bg { background: var(--bg-alt); }
+    .avis-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 20px; }
+    .google-score {
+      display: flex; align-items: center; gap: 16px;
+      background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius);
+      padding: 20px 28px; box-shadow: var(--shadow);
+    }
+    .gs-num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 3rem; font-weight: 800; color: var(--dark); }
+    .gs-stars { color: #f59e0b; font-size: 1.2rem; letter-spacing: 2px; }
+    .gs-count { font-size: .8rem; color: var(--muted); }
+    .avis-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .avis-card {
+      background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius);
+      padding: 26px 22px; box-shadow: var(--shadow);
+    }
+    .avis-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .avis-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 1rem; color: #fff;
+    }
+    .avis-name { font-weight: 600; font-size: .9rem; color: var(--dark); }
+    .avis-date { font-size: .75rem; color: var(--muted); }
+    .avis-stars { color: #f59e0b; font-size: .9rem; margin-bottom: 12px; }
+    .avis-text { font-size: .85rem; color: var(--text); line-height: 1.7; }
+    .avis-source { margin-top: 14px; font-size: .72rem; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+
+    /* ── BLOG ── */
+    .blog-bg { background: var(--bg); }
+    .blog-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; }
+    .blog-card {
+      background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius);
+      overflow: hidden; box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s;
+    }
+    .blog-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.1); }
+    .blog-img { height: 200px; overflow: hidden; }
+    .blog-card.featured .blog-img { height: 260px; }
+    .blog-img img { width: 100%; height: 100%; object-fit: cover; }
+    .blog-body { padding: 22px; }
+    .blog-cat { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--red); margin-bottom: 8px; }
+    .blog-title { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 1rem; line-height: 1.3; margin-bottom: 10px; color: var(--dark); }
+    .blog-card.featured .blog-title { font-size: 1.3rem; }
+    .blog-excerpt { font-size: .82rem; color: var(--muted); margin-bottom: 14px; display: none; }
+    .blog-card.featured .blog-excerpt { display: block; }
+    .blog-meta { font-size: .75rem; color: var(--muted); display: flex; gap: 12px; }
+
+    /* ── CONTACT ── */
+    .contact-bg { background: var(--bg-alt); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .contact-info { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+    .ci-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      background: var(--card); border: 1.5px solid var(--border); border-radius: 12px;
+      padding: 18px 20px; box-shadow: var(--shadow);
+    }
+    .ci-icon { font-size: 1.4rem; min-width: 28px; text-align: center; }
+    .ci-label { font-size: .75rem; color: var(--muted); margin-bottom: 3px; }
+    .ci-val { font-weight: 600; font-size: .95rem; color: var(--dark); }
+    .ci-val a { color: var(--dark); }
+    .ci-val a:hover { color: var(--red); }
+    .contact-form {
+      background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius);
+      padding: 36px 32px; box-shadow: var(--shadow);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label { display: block; font-size: .8rem; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; background: var(--bg);
+      border: 1.5px solid var(--border); border-radius: 10px;
+      color: var(--text); padding: 12px 16px; font-family: 'Inter', sans-serif;
+      font-size: .9rem; outline: none; transition: border-color .2s;
+      resize: vertical;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--red); }
+    .form-submit { width: 100%; margin-top: 8px; font-size: 1rem; justify-content: center; }
+    .form-submit:disabled { opacity: .65; cursor: not-allowed; transform: none !important; }
+
+    .form-feedback {
+      display: none; margin-top: 16px; padding: 14px 18px;
+      border-radius: 10px; font-size: .9rem; font-weight: 500; text-align: center;
+    }
+    .form-feedback.success { display: block; background: rgba(46,158,32,.1); color: #1e7015; border: 1px solid rgba(46,158,32,.3); }
+    .form-feedback.error   { display: block; background: rgba(217,26,14,.08); color: #b01208; border: 1px solid rgba(217,26,14,.2); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--dark); padding: 60px 24px 30px; }
+    .footer-inner { max-width: 1200px; margin: auto; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 50px; }
+    .footer-brand p { font-size: .85rem; color: rgba(255,255,255,0.45); margin-top: 14px; max-width: 280px; line-height: 1.7; }
+    .footer-col h4 { font-weight: 700; font-size: .9rem; margin-bottom: 18px; color: #fff; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { font-size: .85rem; color: rgba(255,255,255,0.45); transition: color .2s; cursor: pointer; }
+    .footer-col ul li a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { font-size: .78rem; color: rgba(255,255,255,0.35); }
+    .footer-socials { display: flex; gap: 12px; }
+    .social-btn {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; color: #fff; transition: background .2s;
+    }
+    .social-btn:hover { background: rgba(255,255,255,0.16); }
+
+    /* ── FLOATING CTAs ── */
+    .float-cta {
+      position: fixed; bottom: 28px; right: 28px; z-index: 200;
+      background: var(--red); color: #fff;
+      width: 58px; height: 58px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; box-shadow: 0 6px 24px rgba(217,26,14,.45);
+      transition: transform .2s;
+    }
+    .float-cta:hover { transform: scale(1.1); }
+
+    .float-wa {
+      position: fixed; bottom: 100px; right: 28px; z-index: 200;
+      background: var(--whatsapp); color: #fff;
+      width: 52px; height: 52px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.35rem; box-shadow: 0 6px 24px rgba(37,211,102,.45);
+      transition: transform .2s;
+    }
+    .float-wa:hover { transform: scale(1.1); }
+
+    /* ── BANDEAU RGPD ── */
+    #rgpd-banner {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 400;
+      background: var(--dark); border-top: 3px solid var(--red);
+      padding: 16px 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    }
+    #rgpd-banner p { font-size: .82rem; color: rgba(255,255,255,0.75); max-width: 720px; line-height: 1.6; }
+    #rgpd-banner p a { color: #fff; text-decoration: underline; }
+    .rgpd-btns { display: flex; gap: 10px; flex-shrink: 0; }
+    .rgpd-accept {
+      background: var(--red); color: #fff; border: none;
+      border-radius: 50px; padding: 8px 20px;
+      font-size: .85rem; font-weight: 600; cursor: pointer; transition: opacity .2s;
+    }
+    .rgpd-accept:hover { opacity: .85; }
+    .rgpd-refuse {
+      background: transparent; color: rgba(255,255,255,0.65);
+      border: 1px solid rgba(255,255,255,0.25); border-radius: 50px; padding: 8px 20px;
+      font-size: .85rem; font-weight: 600; cursor: pointer; transition: all .2s;
+    }
+    .rgpd-refuse:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+
+    /* ── MODULE 1: HERO CARDS ── */
+    .hero-cards-section { background: var(--bg); padding: 60px 24px; }
+    .hc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .hc-card {
+      background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius);
+      padding: 36px 24px; box-shadow: var(--shadow); text-align: center;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .hc-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+    .hc-card .hc-icon { font-size: 3rem; margin-bottom: 14px; }
+    .hc-card .hc-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+    .hc-card .hc-desc { font-size: .9rem; color: var(--muted); margin-bottom: 22px; line-height: 1.6; }
+    .hc-card .hc-cta { display: inline-flex; gap: 6px; align-items: center; font-size: .9rem; color: var(--red); font-weight: 600; transition: gap .2s; }
+    .hc-card .hc-cta:hover { gap: 10px; }
+
+    /* ── MODULE 2: DEEP DIVE (ACCORDÉON) ── */
+    .deep-dive-section { background: var(--bg-alt); padding: 60px 24px; }
+    .dd-inner { max-width: 900px; margin: auto; }
+    .dd-accordion {
+      display: flex; flex-direction: column; gap: 14px;
+      margin-top: 36px;
+    }
+    .dd-item {
+      background: var(--card); border: 1.5px solid var(--border); border-radius: var(--radius);
+      overflow: hidden; box-shadow: var(--shadow);
+      transition: box-shadow .25s;
+    }
+    .dd-item.open { box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+    .dd-header {
+      padding: 24px 28px; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      user-select: none; transition: background .2s;
+    }
+    .dd-item:hover .dd-header { background: rgba(0,0,0,0.02); }
+    .dd-header .dh-left { flex: 1; }
+    .dd-header .dh-icon { font-size: 1.8rem; margin-right: 16px; }
+    .dd-header .dh-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 3px; }
+    .dd-header .dh-subtitle { font-size: .8rem; color: var(--muted); }
+    .dd-arrow {
+      width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;
+      color: var(--red); font-weight: 700; transition: transform .3s;
+    }
+    .dd-item.open .dd-arrow { transform: rotate(180deg); }
+    .dd-body {
+      max-height: 0; overflow: hidden; transition: max-height .3s ease;
+      background: rgba(0,0,0,0.01); border-top: 1px solid var(--border);
+    }
+    .dd-item.open .dd-body { max-height: 1000px; }
+    .dd-content {
+      padding: 28px; display: flex; flex-direction: column; gap: 20px;
+    }
+    .dd-section { display: flex; flex-direction: column; gap: 8px; }
+    .dd-section-title { font-weight: 700; color: var(--dark); font-size: 0.95rem; display: flex; align-items: center; gap: 8px; }
+    .dd-section-items { list-style: none; display: flex; flex-direction: column; gap: 8px; padding-left: 28px; }
+    .dd-section-items li { font-size: 0.9rem; color: var(--text); position: relative; }
+    .dd-section-items li::before { content: '✓'; position: absolute; left: -20px; color: var(--red); font-weight: 700; }
+    .dd-cta-btn {
+      align-self: flex-start; padding: 11px 22px; background: var(--red); color: #fff;
+      border-radius: 50px; font-size: .85rem; font-weight: 600; border: none;
+      cursor: pointer; transition: opacity .2s;
+    }
+    .dd-cta-btn:hover { opacity: .9; }
+
+    /* ── MODULE 3: MATRICE D'INTÉGRATION ── */
+    .integration-section { background: var(--bg); padding: 60px 24px; }
+    .is-inner { max-width: 1000px; margin: auto; }
+    .matrix-container {
+      overflow-x: auto; margin-top: 36px;
+    }
+    .matrix-table {
+      width: 100%; border-collapse: collapse;
+      border: 1.5px solid var(--border); border-radius: var(--radius);
+      overflow: hidden; box-shadow: var(--shadow);
+    }
+    .matrix-table thead {
+      background: var(--dark); color: #fff;
+    }
+    .matrix-table th {
+      padding: 18px 20px; text-align: left; font-weight: 700; font-size: 0.9rem;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .matrix-table th:last-child { border-right: none; }
+    .matrix-table td {
+      padding: 18px 20px; font-size: 0.9rem; border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .matrix-table td:last-child { border-right: none; }
+    .matrix-table tbody tr:last-child td { border-bottom: none; }
+    .matrix-table tbody tr:hover { background: rgba(0,0,0,0.02); }
+    .context-cell { font-weight: 600; color: var(--dark); }
+    .service-cell { color: var(--red); font-weight: 700; }
+    .complement-cell { color: var(--muted); display: flex; flex-direction: column; gap: 6px; }
+    .badge-complement {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: var(--red); color: #fff; padding: 4px 10px;
+      border-radius: 4px; font-size: 0.75rem; font-weight: 600;
+      width: fit-content;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner       { grid-template-columns: 1fr; gap: 40px; }
+      .services-grid    { grid-template-columns: 1fr 1fr; }
+      .avis-grid        { grid-template-columns: 1fr 1fr; }
+      .blog-grid        { grid-template-columns: 1fr; }
+      .contact-grid     { grid-template-columns: 1fr; }
+      .footer-top       { grid-template-columns: 1fr 1fr; }
+      .why-grid         { grid-template-columns: 1fr; }
+      .hc-grid          { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav-links:not(.is-open) { display: none; }
+      .nav-burger               { display: flex; }
+      .services-grid            { grid-template-columns: 1fr; }
+      .avis-grid                { grid-template-columns: 1fr; }
+      .hero-cards-grid          { grid-template-columns: 1fr 1fr; }
+      .form-row                 { grid-template-columns: 1fr; }
+      .footer-top               { grid-template-columns: 1fr; }
+      .avis-header              { flex-direction: column; align-items: flex-start; }
+      #rgpd-banner              { flex-direction: column; align-items: flex-start; }
+      .modal-box                { padding: 32px 20px; }
+      .hc-grid                  { grid-template-columns: 1fr; }
+      .dd-header                { flex-direction: column; gap: 12px; align-items: flex-start; }
+      .dh-left                  { width: 100%; }
+      .dd-header .dh-left > div { flex-direction: column; gap: 6px; }
+      .dd-arrow                 { align-self: flex-end; margin-top: -30px; }
+      .matrix-table th,
+      .matrix-table td          { padding: 14px 12px; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── Gradient bar top ─── -->
+<div class="grad-bar"></div>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="logo_transparent.png" alt="IDI Aquitaine" style="height:112px;width:auto;" />
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pourquoi">Expertise</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#contact" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="accueil">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        Certifié – Saint-Laurent-de-Médoc, Gironde
+      </div>
+      <h1>
+        Expert en <span class="accent">Diagnostic</span><br/>
+        <span class="underline">Immobilier</span><br/>
+        &amp; Infiltrométrie
+      </h1>
+      <p>
+        IDI Aquitaine – Jérémie Autet – intervient pour vos diagnostics réglementaires,
+        tests d'étanchéité à l'air RT2012/RE2020 et recherches de fuites d'eau
+        sans dégradation, en Gironde et dans le Médoc.
+      </p>
+      <p style="font-size: 1.1rem; font-weight: 600; color: var(--dark); margin-bottom: 28px;">
+        Trois prestations complémentaires au service de votre bâtiment.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">📋 Demander un devis</a>
+        <a href="#services" class="btn btn-outline">Découvrir nos services</a>
+      </div>
+      <div class="hero-phone">
+        <a href="tel:+33664484205">📞 06 64 48 42 05</a>
+        <span class="hero-phone-note">Réponse sous 2h</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-cards-grid" style="grid-template-columns:1fr 1fr 1fr;">
+        <div class="hero-card" style="border-top:3px solid #d91a0e;">
+          <img src="picto_infiltrometrie.jpg" alt="Infiltrométrie RT2012/RE2020 – test étanchéité à l'air Gironde" style="width:100%;height:110px;object-fit:cover;border-radius:8px;margin-bottom:10px;" />
+          <div class="hc-title">Infiltrométrie</div>
+          <div class="hc-sub">RT2012 / RE2020</div>
+        </div>
+        <div class="hero-card" style="border-top:3px solid #1a5fd9;">
+          <img src="picto_humidite.jpg" alt="Recherche de fuite d'eau non destructive Gironde" style="width:100%;height:110px;object-fit:cover;border-radius:8px;margin-bottom:10px;" />
+          <div class="hc-title">Diagnostic Humidité</div>
+          <div class="hc-sub">Recherche de fuite</div>
+        </div>
+        <div class="hero-card" style="border-top:3px solid #2e7d32;">
+          <img src="picto_dpe.jpg" alt="Diagnostic de performance énergétique DPE Bordeaux Médoc" style="width:100%;height:110px;object-fit:cover;border-radius:8px;margin-bottom:10px;" />
+          <div class="hc-title">Diagnostic de Perf.</div>
+          <div class="hc-sub">Énergétique (DPE)</div>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hs-num"><span>500+</span></div>
+          <div class="hs-label">Chantiers réalisés</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-num"><span>5★</span></div>
+          <div class="hs-label">Avis Google</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-num"><span>48h</span></div>
+          <div class="hs-label">Rapport remis</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MODULE 1: HERO CARDS (3 offres principales) ─── -->
+<section class="hero-cards-section">
+  <div class="section-inner">
+    <h2 class="section-title" style="text-align:center;margin-bottom:50px;">Nos 3 Prestations Clés</h2>
+
+    <div class="hc-grid">
+
+      <!-- Card 1: Infiltrométrie -->
+      <div class="hc-card">
+        <div class="hc-icon">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:3rem;height:3rem;color:#d91a0e;">
+            <path d="M12 2v16"></path>
+            <circle cx="12" cy="20" r="2"></circle>
+            <circle cx="12" cy="8" r="3"></circle>
+          </svg>
+        </div>
+        <div class="hc-title">Infiltrométrie</div>
+        <p class="hc-desc">
+          Validez votre étanchéité à l'air et la conformité RT2012 / RE2020.
+          Test d'étanchéité professionnel avec Blower Door.
+        </p>
+        <a href="#deep-dive" class="hc-cta">En savoir plus →</a>
+      </div>
+
+      <!-- Card 2: Recherche de Fuites -->
+      <div class="hc-card">
+        <div class="hc-icon">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:3rem;height:3rem;color:#1a5fd9;">
+            <path d="M12 2c-2 4-4 6-4 9 0 3.314 1.791 6 4 6s4-2.686 4-6c0-3-2-5-4-9Z"></path>
+          </svg>
+        </div>
+        <div class="hc-title">Recherche de Fuites</div>
+        <p class="hc-desc">
+          Localisez l'origine des problèmes d'humidité sans démolition.
+          Détection infrarouge, acoustique et réseau.
+        </p>
+        <a href="#deep-dive" class="hc-cta">En savoir plus →</a>
+      </div>
+
+      <!-- Card 3: DPE -->
+      <div class="hc-card">
+        <div class="hc-icon">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:3rem;height:3rem;color:#2e7d32;">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8Z"></path>
+          </svg>
+        </div>
+        <div class="hc-title">Diagnostic DPE</div>
+        <p class="hc-desc">
+          Analysez votre consommation énergétique et impact climatique.
+          Obligatoire pour toute vente ou location.
+        </p>
+        <a href="#deep-dive" class="hc-cta">En savoir plus →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── MODULE 2: DEEP DIVE (ACCORDÉON) ─── -->
+<section class="deep-dive-section" id="deep-dive">
+  <div class="dd-inner">
+    <h2 class="section-title" style="margin-bottom:12px;">Détail de chaque prestation</h2>
+    <p class="section-sub" style="margin-bottom:0;">Cliquez pour explorer nos offres. Chaque service peut être utilisé seul ou en combinaison.</p>
+
+    <div class="dd-accordion">
+
+      <!-- ACCORDÉON 1: INFILTROMÉTRIE -->
+      <div class="dd-item">
+        <div class="dd-header">
+          <div class="dh-left">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <span class="dh-icon" style="font-size:1.8rem;color:#d91a0e;">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v16"></path>
+                  <circle cx="12" cy="20" r="2"></circle>
+                  <circle cx="12" cy="8" r="3"></circle>
+                </svg>
+              </span>
+              <div>
+                <div class="dh-title">Infiltrométrie – Étanchéité à l'air RT2012/RE2020</div>
+                <div class="dh-subtitle">Test de conformité réglementaire</div>
+              </div>
+            </div>
+          </div>
+          <div class="dd-arrow">›</div>
+        </div>
+        <div class="dd-body">
+          <div class="dd-content">
+
+            <div class="dd-section">
+              <div class="dd-section-title">🎯 Le problème</div>
+              <ul class="dd-section-items">
+                <li>Confirmer la conformité de votre bâtiment</li>
+                <li>Valider l'étanchéité avant certification</li>
+                <li>Éviter les déperditions énergétiques invisibles</li>
+              </ul>
+            </div>
+
+            <div class="dd-section">
+              <div class="dd-section-title">💡 Notre solution</div>
+              <ul class="dd-section-items">
+                <li>Test professionnel avec équipement Blower Door certifié</li>
+                <li>Mesure précise du débit de fuite d'air</li>
+                <li>Lien direct avec DPE obligatoire (RT2012/RE2020)</li>
+              </ul>
+            </div>
+
+            <div class="dd-section">
+              <div class="dd-section-title">✨ Bénéfices</div>
+              <ul class="dd-section-items">
+                <li>Conformité RT2012 / RE2020 attestée</li>
+                <li>Économies énergétiques garanties</li>
+                <li>Rapport certifié, juridiquement valide</li>
+              </ul>
+            </div>
+
+            <button class="dd-cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+              📋 Demander un devis Infiltrométrie
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCORDÉON 2: RECHERCHE DE FUITES -->
+      <div class="dd-item">
+        <div class="dd-header">
+          <div class="dh-left">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <span class="dh-icon" style="font-size:1.8rem;color:#1a5fd9;">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2c-2 4-4 6-4 9 0 3.314 1.791 6 4 6s4-2.686 4-6c0-3-2-5-4-9Z"></path>
+                </svg>
+              </span>
+              <div>
+                <div class="dh-title">Recherche de Fuites & Détection de Réseau</div>
+                <div class="dh-subtitle">Sans casse, sans démolition</div>
+              </div>
+            </div>
+          </div>
+          <div class="dd-arrow">›</div>
+        </div>
+        <div class="dd-body">
+          <div class="dd-content">
+
+            <div class="dd-section">
+              <div class="dd-section-title">🎯 Le problème</div>
+              <ul class="dd-section-items">
+                <li>Vous avez de l'humidité, des taches ou des odeurs</li>
+                <li>Les causes peuvent être multiples et complexes</li>
+                <li>Les mauvaises diagnostics coûtent cher en réparations inutiles</li>
+              </ul>
+            </div>
+
+            <div class="dd-section">
+              <div class="dd-section-title">💡 Notre solution</div>
+              <ul class="dd-section-items">
+                <li>Caméra thermique infrarouge pour les variations de température</li>
+                <li>Caméra endoscopique pour voir l'intérieur des conduits</li>
+                <li>Aiguille acoustique pour localiser les fuites actives</li>
+                <li>Détecteur de réseau enterré pour cartographier le système</li>
+              </ul>
+            </div>
+
+            <div class="dd-section">
+              <div class="dd-section-title">✨ Bénéfices</div>
+              <ul class="dd-section-items">
+                <li>Diagnostic précis et rapide (sans démolition)</li>
+                <li>Économies sur les réparations inutiles</li>
+                <li>Planification exacte des travaux</li>
+              </ul>
+            </div>
+
+            <button class="dd-cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+              📋 Demander un devis Recherche de Fuite
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCORDÉON 3: DPE -->
+      <div class="dd-item">
+        <div class="dd-header">
+          <div class="dh-left">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <span class="dh-icon" style="font-size:1.8rem;color:#2e7d32;">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8Z"></path>
+                </svg>
+              </span>
+              <div>
+                <div class="dh-title">Diagnostic de Performance Énergétique (DPE)</div>
+                <div class="dh-subtitle">Analyse énergétique complète obligatoire</div>
+              </div>
+            </div>
+          </div>
+          <div class="dd-arrow">›</div>
+        </div>
+        <div class="dd-body">
+          <div class="dd-content">
+
+            <div class="dd-section">
+              <div class="dd-section-title">🎯 Le problème</div>
+              <ul class="dd-section-items">
+                <li>Le DPE est obligatoire pour toute vente ou location</li>
+                <li>Comprendre la consommation énergétique et l'impact climatique</li>
+                <li>Identifier les axes d'amélioration possibles</li>
+              </ul>
+            </div>
+
+            <div class="dd-section">
+              <div class="dd-section-title">💡 Notre solution</div>
+              <ul class="dd-section-items">
+                <li>Audit complet par diagnostiqueur accrédité COFRAC</li>
+                <li>Analyse de la consommation énergétique estimée</li>
+                <li>Rapport claire avec recommandations d'amélioration</li>
+                <li>Analyse thermique et étude de ventilation complétées</li>
+              </ul>
+            </div>
+
+            <div class="dd-section">
+              <div class="dd-section-title">✨ Bénéfices</div>
+              <ul class="dd-section-items">
+                <li>Certification officielle reconnue légalement</li>
+                <li>Valorise votre bien immobilier</li>
+                <li>Fournit des pistes pour réduire votre facture énergétique</li>
+              </ul>
+            </div>
+
+            <button class="dd-cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+              📋 Demander un devis DPE
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── MODULE 3: MATRICE D'INTÉGRATION ─── -->
+<section class="integration-section">
+  <div class="is-inner">
+    <h2 class="section-title" style="margin-bottom:12px;">Comment combiner nos services ?</h2>
+    <p class="section-sub" style="margin-bottom:0;">Découvrez comment ces 3 prestations se complètent pour une vision 360° de votre bâtiment.</p>
+
+    <div class="matrix-container">
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Votre contexte</th>
+            <th style="width:25%;">Service principal</th>
+            <th style="width:50%;">Services complémentaires recommandés</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="context-cell">Vous avez<br/>de l'humidité</td>
+            <td class="service-cell">🌊 Recherche<br/>de Fuites</td>
+            <td class="complement-cell">
+              <span><span class="badge-complement">+ Infiltrométrie</span> pour vérifier l'étanchéité</span>
+              <span><span class="badge-complement">+ DPE</span> pour évaluer le contexte thermique</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="context-cell">Construction<br/>ou rénovation<br/>neuve</td>
+            <td class="service-cell">🌡️ Infiltrométrie<br/>(obligatoire)</td>
+            <td class="complement-cell">
+              <span><span class="badge-complement">+ DPE</span> (obligatoire pour certification RT2012/RE2020)</span>
+              <span><span class="badge-complement">+ Recherche de fuites</span> pour vérifier qu'aucune source d'humidité</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="context-cell">Vente ou<br/>location<br/>obligatoire</td>
+            <td class="service-cell">⚡ DPE</td>
+            <td class="complement-cell">
+              <span><span class="badge-complement">+ Infiltrométrie</span> pour une conformité additionnelle</span>
+              <span><span class="badge-complement">+ Recherche de fuites</span> pour un diagnostic 360° complet</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="context-cell">Audit complet<br/>de performance</td>
+            <td class="service-cell">✅ Tous les trois</td>
+            <td class="complement-cell">
+              <span><strong>Vision 360°</strong> complète de votre bâtiment</span>
+              <span>Étanchéité, thermique, humidité et conformité légale</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ─── -->
+<section class="services-bg" id="services">
+  <div class="section-inner">
+    <span class="section-tag">Nos prestations</span>
+    <h2 class="section-title">Trois domaines d'expertise</h2>
+    <p class="section-sub">Des interventions précises, réalisées avec du matériel professionnel, pour des rapports fiables et certifiés.</p>
+
+    <div class="services-grid">
+
+      <!-- RT2012 / RE2020 (INFILTROMÉTRIE) - 1er -->
+      <div class="service-card">
+        <img src="picto_infiltrometrie.jpg" alt="Infiltrométrie RT2012 RE2020 test étanchéité Blower Door Médoc" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:20px;" />
+        <div class="sc-title">Infiltrométrie RT2012 / RE2020</div>
+        <div class="sc-sub">Étanchéité à l'air réglementaire</div>
+        <ul class="sc-list">
+          <li>Étude thermique réglementaire</li>
+          <li>Test d'étanchéité à l'air (Blower Door)</li>
+          <li>Contrôle VMC en place</li>
+          <li>Étude VMC &amp; dimensionnement</li>
+        </ul>
+        <span class="sc-badge">Agréé RT2012 &amp; RE2020</span>
+      </div>
+
+      <!-- Recherche de fuite - 2e -->
+      <div class="service-card">
+        <img src="picto_humidite.jpg" alt="Recherche fuite eau non destructive caméra thermique Gironde" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:20px;" />
+        <div class="sc-title">Recherche de Fuite Non Destructive</div>
+        <div class="sc-sub">Sans casse, sans démolition</div>
+        <ul class="sc-list">
+          <li>Caméra thermique infrarouge</li>
+          <li>Caméra endoscopique</li>
+          <li>Aiguille acoustique</li>
+          <li>Détecteur de réseau enterré</li>
+        </ul>
+        <span class="sc-badge">Zéro démolition inutile</span>
+      </div>
+
+      <!-- Diagnostic Immobilier - 3e -->
+      <div class="service-card">
+        <img src="picto_dpe.jpg" alt="Diagnostic immobilier DPE amiante plomb Bordeaux Gironde" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:20px;" />
+        <div class="sc-title">Diagnostic Immobilier</div>
+        <div class="sc-sub">Obligatoire pour toute vente ou location</div>
+        <ul class="sc-list">
+          <li>DPE – Diagnostic de Performance Énergétique</li>
+          <li>Superficie (Loi Carrez / Boutin)</li>
+          <li>Diagnostic Plomb (CREP)</li>
+          <li>Diagnostic Amiante</li>
+          <li>État Parasitaire Termites</li>
+          <li>Diagnostic Gaz &amp; Électricité</li>
+        </ul>
+        <span class="sc-badge">Attestation de conformité</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── POURQUOI NOUS ─── -->
+<section class="pourquoi-bg" id="pourquoi">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <span class="section-tag">Pourquoi IDI Aquitaine ?</span>
+        <h2 class="section-title">Un expert de confiance,<br/>un rapport en 48h</h2>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="wi-icon" style="background:rgba(46,158,32,.1);border:1px solid rgba(46,158,32,.2);border-radius:10px;width:46px;height:46px;min-width:46px;display:flex;align-items:center;justify-content:center;color:#2e9e20;">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="wi-title">Certifications à jour</div>
+              <div class="wi-desc">Diagnostiqueur certifié, formations continues, matériel étalonné. Vos rapports sont juridiquement valides et reconnus.</div>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon" style="background:rgba(46,158,32,.1);border:1px solid rgba(46,158,32,.2);border-radius:10px;width:46px;height:46px;min-width:46px;display:flex;align-items:center;justify-content:center;color:#2e9e20;">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="wi-title">Réactivité &amp; disponibilité</div>
+              <div class="wi-desc">Devis sous 2h, intervention sous 48h, rapport remis dans les délais pour ne pas bloquer votre transaction.</div>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon" style="background:rgba(46,158,32,.1);border:1px solid rgba(46,158,32,.2);border-radius:10px;width:46px;height:46px;min-width:46px;display:flex;align-items:center;justify-content:center;color:#2e9e20;">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="wi-title">Matériel de pointe</div>
+              <div class="wi-desc">Blower Door, caméra thermique FLIR, aiguille acoustique, endoscope : des outils professionnels pour des résultats précis.</div>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon" style="background:rgba(46,158,32,.1);border:1px solid rgba(46,158,32,.2);border-radius:10px;width:46px;height:46px;min-width:46px;display:flex;align-items:center;justify-content:center;color:#2e9e20;">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="wi-title">Tarif transparent</div>
+              <div class="wi-desc">Devis gratuit et sans engagement, tarification claire, pas de mauvaise surprise. Disponible pour particuliers et professionnels.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <h3 style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:8px;color:#fff;">Habilitations &amp; certifications</h3>
+        <p style="font-size:.82rem;color:var(--grey);margin-bottom:20px;">Jérémie Autet – Diagnostiqueur certifié</p>
+        <div class="cert-item">
+          <div class="cert-icon" style="font-size:1.5rem;">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="13" x2="8" y2="13"></line>
+              <line x1="12" y1="17" x2="8" y2="17"></line>
+            </svg>
+          </div>
+          <div>
+            <div class="cert-name">DPE – Diagnostic Perf. Énergétique</div>
+            <div class="cert-desc">Certifié organisme accrédité COFRAC</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon" style="font-size:1.5rem;color:#ff9f1c;">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v16"></path>
+              <circle cx="12" cy="20" r="2"></circle>
+              <circle cx="12" cy="8" r="3"></circle>
+            </svg>
+          </div>
+          <div>
+            <div class="cert-name">Thermicien Blower Door</div>
+            <div class="cert-desc">Agréé RT2012 &amp; RE2020</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon" style="font-size:1.5rem;color:#0084ff;">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2c-2 4-4 6-4 9 0 3.314 1.791 6 4 6s4-2.686 4-6c0-3-2-5-4-9Z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="cert-name">Recherche de fuite</div>
+            <div class="cert-desc">Méthode non destructive certifiée</div>
+          </div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-icon" style="font-size:1.5rem;color:#34a853;">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="cert-name">Responsabilité Civile Professionnelle</div>
+            <div class="cert-desc">Assurance RC Pro à jour</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── RÉALISATIONS ─── -->
+<section class="realisations-bg" id="realisations">
+  <div class="section-inner">
+    <span class="section-tag">Nos chantiers</span>
+    <h2 class="section-title">Réalisations récentes</h2>
+    <p class="section-sub">Les dernières interventions publiées en direct depuis la page Facebook d'IDI Aquitaine.</p>
+
+    <div style="display:flex;justify-content:center;margin-top:8px;">
+      <div style="max-width:520px;width:100%;">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FIDI-Aquitaine-J%C3%A9r%C3%A9mie-Autet-100089890814915%2F&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false"
+          width="500"
+          height="720"
+          style="border:none;overflow:hidden;border-radius:14px;box-shadow:var(--shadow);display:block;width:100%;"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="real-cta">
+      <a href="https://www.facebook.com/p/IDI-Aquitaine-J%C3%A9r%C3%A9mie-Autet-100089890814915/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+        👍 Suivre IDI Aquitaine sur Facebook
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── AVIS ─── -->
+<section class="avis-bg" id="avis">
+  <div class="section-inner">
+    <div class="avis-header">
+      <div>
+        <span class="section-tag">Ce que disent nos clients</span>
+        <h2 class="section-title" style="margin-bottom:0">Avis Google vérifiés</h2>
+      </div>
+      <!-- ⚠️ Remplacer le chiffre par le nombre réel d'avis Google -->
+      <div class="google-score">
+        <div>
+          <div class="gs-num">5.0</div>
+          <div class="gs-stars">★★★★★</div>
+          <div class="gs-count">Basé sur les avis Google</div>
+        </div>
+        <div style="font-size:2.5rem;">G</div>
+      </div>
+    </div>
+
+    <div class="avis-grid">
+
+      <div class="avis-card">
+        <div class="avis-top">
+          <div class="avis-avatar" style="background:#4285f4;">M</div>
+          <div>
+            <div class="avis-name">Marie D.</div>
+            <div class="avis-date">Mars 2024</div>
+          </div>
+        </div>
+        <div class="avis-stars">★★★★★</div>
+        <div class="avis-text">Jérémie est intervenu rapidement pour le diagnostic complet de notre maison avant vente. Très professionnel, ponctuel, et le rapport a été envoyé le lendemain. Je recommande vivement !</div>
+        <div class="avis-source">🔍 Avis Google vérifié</div>
+      </div>
+
+      <div class="avis-card">
+        <div class="avis-top">
+          <div class="avis-avatar" style="background:#34a853;">T</div>
+          <div>
+            <div class="avis-name">Thomas L.</div>
+            <div class="avis-date">Janvier 2024</div>
+          </div>
+        </div>
+        <div class="avis-stars">★★★★★</div>
+        <div class="avis-text">Excellente prestation pour le test d'étanchéité de ma maison RT2012. Jérémie prend le temps d'expliquer les résultats et de conseiller sur les améliorations possibles. Très sérieux.</div>
+        <div class="avis-source">🔍 Avis Google vérifié</div>
+      </div>
+
+      <div class="avis-card">
+        <div class="avis-top">
+          <div class="avis-avatar" style="background:#ea4335;">S</div>
+          <div>
+            <div class="avis-name">Sophie M.</div>
+            <div class="avis-date">Novembre 2023</div>
+          </div>
+        </div>
+        <div class="avis-stars">★★★★★</div>
+        <div class="avis-text">Recherche de fuite résolue en quelques heures sans aucune démolition ! La caméra thermique a tout détecté. Résultat bluffant, artisan à l'écoute et très compétent.</div>
+        <div class="avis-source">🔍 Avis Google vérifié</div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <!-- ⚠️ Remplacer par le lien direct vers la fiche Google My Business -->
+      <a href="https://www.google.com/maps/search/?api=1&query=IDI+Aquitaine+J%C3%A9r%C3%A9mie+Autet+Saint-Laurent-de-M%C3%A9doc" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Voir tous les avis sur Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BLOG ─── -->
+<section class="blog-bg" id="blog">
+  <div class="section-inner">
+    <span class="section-tag">Actualités &amp; conseils</span>
+    <h2 class="section-title">Le blog IDI Aquitaine</h2>
+    <p class="section-sub">Conseils d'expert, actualités réglementaires et guides pratiques pour particuliers et professionnels.</p>
+
+    <div class="blog-grid">
+
+      <article class="blog-card featured">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=320&fit=crop&auto=format" alt="Test étanchéité à l'air RE2020 Blower Door Gironde" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat">Réglementation</div>
+          <div class="blog-title">RE2020 : tout ce qu'il faut savoir sur le test d'étanchéité à l'air en 2024</div>
+          <div class="blog-excerpt">Depuis le 1er janvier 2022, la RE2020 remplace la RT2012 pour toutes les constructions neuves. Qu'est-ce que cela change pour le test Blower Door ? Quelles sont les nouvelles exigences en matière d'étanchéité ?</div>
+          <div class="blog-meta"><span>📅 15 mars 2024</span><span>⏱ 5 min</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=220&fit=crop&auto=format" alt="Détection fuite eau sans démolition Médoc" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat">Conseils</div>
+          <div class="blog-title">Fuite d'eau : comment la détecter sans casse ?</div>
+          <div class="blog-meta"><span>📅 8 fév. 2024</span><span>⏱ 4 min</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-img">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=220&fit=crop&auto=format" alt="DPE diagnostics obligatoires vente immobilier Bordeaux" loading="lazy" />
+        </div>
+        <div class="blog-body">
+          <div class="blog-cat">Diagnostic</div>
+          <div class="blog-title">DPE 2024 : quels diagnostics sont obligatoires pour vendre ?</div>
+          <div class="blog-meta"><span>📅 20 jan. 2024</span><span>⏱ 3 min</span></div>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <a href="blog.html" class="btn btn-outline">📖 Voir tous les articles du blog →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<!--
+  ════════════════════════════════════════════════════════
+  FORMULAIRE — CONFIGURATION FORMSPREE (service gratuit)
+  ════════════════════════════════════════════════════════
+  Pour activer l'envoi vers idiaquitaine@outlook.fr :
+  1. Créer un compte sur https://formspree.io
+  2. Créer un nouveau formulaire → saisir "idiaquitaine@outlook.fr"
+  3. Copier l'ID fourni (ex : xrgvkpld)
+  4. Remplacer FORMSPREE_ID ci-dessous par cet ID
+  ════════════════════════════════════════════════════════
+-->
+<section class="contact-bg" id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+
+      <div>
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Demandez votre devis gratuit</h2>
+        <p class="section-sub">Réponse sous 2h en journée. Intervention rapide en Gironde, Bordeaux et dans le Médoc.</p>
+
+        <div class="contact-info">
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:#d91a0e;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="ci-label">Téléphone</div>
+              <div class="ci-val"><a href="tel:+33664484205">06 64 48 42 05</a></div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:#d91a0e;">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val">
+                <!-- Email protégé contre le scraping -->
+                <a href="#contact" id="email-link">idiaquitaine&#64;outlook&#46;fr</a>
+              </div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:#d91a0e;">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="ci-label">Zone d'intervention</div>
+              <div class="ci-val">Saint-Laurent-de-Médoc &amp; toute la Gironde</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:#d91a0e;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="ci-label">Horaires</div>
+              <div class="ci-val">Lun–Ven 8h–19h · Sam sur RDV</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3 style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:24px;">Formulaire de contact</h3>
+        <form id="contact-form" novalidate>
+          <!-- Honeypot anti-spam (ne pas supprimer) -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-prenom">Prénom *</label>
+              <input id="f-prenom" type="text" name="prenom" placeholder="Jean" required />
+            </div>
+            <div class="form-group">
+              <label for="f-nom">Nom *</label>
+              <input id="f-nom" type="text" name="nom" placeholder="Dupont" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email *</label>
+            <input id="f-email" type="email" name="email" placeholder="jean@exemple.fr" required />
+          </div>
+          <div class="form-group">
+            <label for="f-tel">Téléphone</label>
+            <input id="f-tel" type="tel" name="telephone" placeholder="06 00 00 00 00" />
+          </div>
+          <div class="form-group">
+            <label for="f-prestation">Prestation souhaitée *</label>
+            <select id="f-prestation" name="prestation" required>
+              <option value="" disabled selected>Choisissez une prestation</option>
+              <option>Diagnostic immobilier complet</option>
+              <option>DPE uniquement</option>
+              <option>Test d'étanchéité à l'air (RT2012/RE2020)</option>
+              <option>Étude thermique réglementaire</option>
+              <option>Recherche de fuite non destructive</option>
+              <option>Contrôle VMC</option>
+              <option>Autre / Renseignement</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="4" placeholder="Décrivez votre projet ou votre bien immobilier…"></textarea>
+          </div>
+          <div class="form-group" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;">
+            <input type="checkbox" id="f-rgpd" name="rgpd" required style="width:auto;margin-top:3px;flex-shrink:0;" />
+            <label for="f-rgpd" style="font-weight:400;font-size:.8rem;color:var(--muted);cursor:pointer;">
+              J'accepte que mes données soient utilisées pour traiter ma demande de devis, conformément à la
+              <a href="politique-confidentialite.html" style="color:var(--red);">politique de confidentialité</a>.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+            Envoyer ma demande →
+          </button>
+          <div class="form-feedback" id="form-feedback"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="logo_transparent.png" alt="IDI Aquitaine" style="height:60px;width:auto;" />
+        </div>
+        <p>Infiltrométrie et Diagnostic Immobilier – Recherche de Fuite d'eau Non Destructive. Jérémie Autet, expert certifié en Gironde, Bordeaux et dans le Médoc.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Diagnostic Immobilier</a></li>
+          <li><a href="#services">Infiltrométrie RT2012</a></li>
+          <li><a href="#services">RE2020 &amp; étanchéité</a></li>
+          <li><a href="#services">Recherche de fuite</a></li>
+          <li><a href="#services">Caméra thermique</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#pourquoi">Notre expertise</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#avis">Avis clients</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="cgv.html">CGV</a></li>
+          <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <!-- ⚠️ Remplacer SIRET par le numéro réel -->
+      <p>© 2025 IDI Aquitaine – Jérémie Autet. Tous droits réservés. SIRET : [À COMPLÉTER]</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/p/IDI-Aquitaine-J%C3%A9r%C3%A9mie-Autet-100089890814915/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Facebook IDI Aquitaine">f</a>
+        <!-- ⚠️ Remplacer # par le lien direct vers la fiche Google My Business -->
+        <a href="https://www.google.com/maps/search/?api=1&query=IDI+Aquitaine+Jérémie+Autet" target="_blank" rel="noopener noreferrer" class="social-btn" title="Google My Business">G</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── Floating phone CTA ─── -->
+<a href="tel:+33664484205" class="float-cta" title="Appeler IDI Aquitaine – 06 64 48 42 05">📞</a>
+
+<!-- ─── Floating WhatsApp ─── -->
+<a href="https://wa.me/33664484205?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20un%20diagnostic%20immobilier." target="_blank" rel="noopener noreferrer" class="float-wa" title="Écrire sur WhatsApp">💬</a>
+
+<div class="grad-bar"></div>
+
+<!-- ─── BANDEAU RGPD ─── -->
+<div id="rgpd-banner" role="dialog" aria-label="Consentement cookies">
+  <p>
+    Ce site utilise des cookies techniques nécessaires à son fonctionnement (formulaire de contact via Formspree).
+    Aucune donnée n'est vendue à des tiers. En continuant, vous acceptez leur utilisation.
+    <a href="politique-confidentialite.html">En savoir plus</a>.
+  </p>
+  <div class="rgpd-btns">
+    <button class="rgpd-accept" onclick="rgpdConsent(true)">Accepter</button>
+    <button class="rgpd-refuse" onclick="rgpdConsent(false)">Refuser</button>
+  </div>
+</div>
+
+
+<!-- ─── JavaScript ─── -->
+<script>
+  /* ── Burger menu ── */
+  const burger   = document.getElementById('nav-burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+
+  /* Ferme le menu mobile au clic sur un lien */
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ── Email lien cliquable (protection anti-scraping) ── */
+  document.getElementById('email-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'mailto:idiaquitaine@outlook.fr';
+  });
+
+  /* ── Validation des champs ── */
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+
+  function validatePhone(phone) {
+    if (!phone) return true; // Optionnel
+    const regex = /^(?:0[1-9]|[+]?33[1-9])[0-9]{8}$/;
+    return regex.test(phone.replace(/\s/g, ''));
+  }
+
+  function validatePrenom(prenom) {
+    return prenom.trim().length >= 2;
+  }
+
+  function validateNom(nom) {
+    return nom.trim().length >= 2;
+  }
+
+  /* ── Formulaire Formspree (AJAX) ── */
+  const form       = document.getElementById('contact-form');
+  const submitBtn  = document.getElementById('form-submit-btn');
+  const feedback   = document.getElementById('form-feedback');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    feedback.className = 'form-feedback';
+
+    /* Récupération des valeurs */
+    const prenom = document.getElementById('f-prenom').value.trim();
+    const nom = document.getElementById('f-nom').value.trim();
+    const email = document.getElementById('f-email').value.trim();
+    const tel = document.getElementById('f-tel').value.trim();
+    const prestation = document.getElementById('f-prestation').value;
+
+    /* Validation prénom */
+    if (!validatePrenom(prenom)) {
+      feedback.textContent = '❌ Le prénom doit contenir au moins 2 caractères.';
+      feedback.className = 'form-feedback error';
+      return;
+    }
+
+    /* Validation nom */
+    if (!validateNom(nom)) {
+      feedback.textContent = '❌ Le nom doit contenir au moins 2 caractères.';
+      feedback.className = 'form-feedback error';
+      return;
+    }
+
+    /* Validation email */
+    if (!validateEmail(email)) {
+      feedback.textContent = '❌ Veuillez entrer une adresse email valide (ex: nom@exemple.fr).';
+      feedback.className = 'form-feedback error';
+      return;
+    }
+
+    /* Validation téléphone (si fourni) */
+    if (tel && !validatePhone(tel)) {
+      feedback.textContent = '❌ Le numéro de téléphone doit être au format français (06/07 suivi de 8 chiffres).';
+      feedback.className = 'form-feedback error';
+      return;
+    }
+
+    /* Validation prestation */
+    if (!prestation) {
+      feedback.textContent = '❌ Veuillez sélectionner une prestation.';
+      feedback.className = 'form-feedback error';
+      return;
+    }
+
+    /* Validation RGPD */
+    if (!document.getElementById('f-rgpd').checked) {
+      feedback.textContent = '❌ Veuillez accepter la politique de confidentialité pour envoyer votre message.';
+      feedback.className = 'form-feedback error';
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Envoi en cours…';
+
+    try {
+      /* Formspree endpoint configuré */
+      const response = await fetch('https://formspree.io/f/mojzrdvb', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        feedback.textContent = '✅ Votre demande a bien été envoyée ! Nous vous répondons sous 2h en journée.';
+        feedback.className = 'form-feedback success';
+        form.reset();
+      } else {
+        const data = await response.json();
+        throw new Error(data.error || 'Erreur serveur');
+      }
+    } catch (err) {
+      feedback.textContent = '❌ Une erreur est survenue. Appelez-nous directement au 06 64 48 42 05 ou écrivez à idiaquitaine@outlook.fr';
+      feedback.className = 'form-feedback error';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Envoyer ma demande →';
+      feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+
+  /* ── Bannière RGPD ── */
+  const banner = document.getElementById('rgpd-banner');
+
+  function rgpdConsent(accepted) {
+    localStorage.setItem('rgpd_consent', accepted ? 'accepted' : 'refused');
+    banner.style.display = 'none';
+  }
+
+  if (localStorage.getItem('rgpd_consent')) {
+    banner.style.display = 'none';
+  }
+
+  /* ── Modals légaux ── */
+
+  /* Ferme les modals en cliquant sur l'overlay */
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeModal(overlay.id);
+    });
+  });
+
+  /* Ferme les modals avec Escape */
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id));
+    }
+  });
+
+  /* ── ACCORDÉON (MODULE 2) ── */
+  document.querySelectorAll('.dd-header').forEach(header => {
+    header.addEventListener('click', function() {
+      const item = this.parentElement;
+      const isOpen = item.classList.contains('open');
+
+      /* Ferme tous les autres items */
+      document.querySelectorAll('.dd-item').forEach(el => {
+        if (el !== item) el.classList.remove('open');
+      });
+
+      /* Toggle le current */
+      item.classList.toggle('open');
+    });
+  });
+
+  /* Ouvre le premier accordéon par défaut */
+  window.addEventListener('load', () => {
+    const firstItem = document.querySelector('.dd-item');
+    if (firstItem) firstItem.classList.add('open');
+  });
+</script>
+
+</body>
+</html>

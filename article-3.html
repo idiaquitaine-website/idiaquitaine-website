@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Blower Door : Mesure et Technique de l'Étanchéité à l'Air</title>
+  <meta name="description" content="Comprendre le test Blower Door : fonctionnement, technique de mesure, et comment cette méthode certifiée évalue l'étanchéité à l'air des bâtiments." />
+  <link rel="canonical" href="https://idiaquitaine.fr/article-3.html" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <!-- Google Analytics 4 ────────────────────────────────── -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Schema.org Article ─────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Test Blower Door : Mesure et Technique de l'Étanchéité à l'Air",
+    "description": "Comprendre le test Blower Door : fonctionnement, technique de mesure, et comment cette méthode certifiée évalue l'étanchéité à l'air des bâtiments.",
+    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=320&fit=crop",
+    "author": {"@type": "Organization", "name": "IDI Aquitaine", "url": "https://idi-aquitaine.fr"},
+    "publisher": {"@type": "Organization", "name": "IDI Aquitaine", "logo": {"@type": "ImageObject", "url": "https://idi-aquitaine.fr/logo.png"}},
+    "datePublished": "2025-11-01",
+    "dateModified": "2025-11-01"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --dark: #1c1c1c; --text: #2a2a2a; --muted: #6b6b6b; --red: #d91a0e; --bg: #f5f4f0; --card: #fff; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+    a { color: var(--red); text-decoration: none; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0,0,0,0.09);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 95px;
+      position: relative;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo img { height: 112px; width: auto; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover { color: var(--dark); }
+    .nav-cta { background: var(--red); color: #fff !important; padding: 9px 22px; border-radius: 50px; font-weight: 600 !important; }
+
+    .nav-burger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 8px;
+      align-items: center; justify-content: center;
+    }
+    .nav-burger span {
+      width: 24px; height: 2.5px; background: var(--dark);
+      border-radius: 2px; transition: all .3s ease;
+    }
+    .nav-burger.is-open span:nth-child(1) { transform: rotate(45deg) translate(7px, 8px); }
+    .nav-burger.is-open span:nth-child(2) { opacity: 0; }
+    .nav-burger.is-open span:nth-child(3) { transform: rotate(-45deg) translate(8px, -7px); }
+
+    @media (max-width: 768px) {
+      .nav-burger { display: flex; }
+      .nav-links.is-open { display: flex; }
+      .nav-links {
+        display: none;
+        position: fixed; top: 95px; left: 0; right: 0;
+        flex-direction: column; gap: 0;
+        background: rgba(255,255,255,0.98);
+        backdrop-filter: blur(14px);
+        padding: 24px;
+        z-index: 101;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.09); }
+    }
+    .article { max-width: 800px; margin: 100px auto 60px; padding: 0 24px; }
+    .article h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.4rem; font-weight: 800; margin-bottom: 20px; color: var(--dark); line-height: 1.2; }
+    .article-meta { display: flex; gap: 20px; color: var(--muted); font-size: 0.9rem; margin-bottom: 30px; padding-bottom: 24px; border-bottom: 1px solid rgba(0,0,0,.09); }
+    .article-content { font-size: 1rem; }
+    .article-content h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 700; margin: 36px 0 18px; color: var(--dark); }
+    .article-content h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 24px 0 12px; color: var(--dark); }
+    .article-content p { margin-bottom: 18px; }
+    .article-content ul, .article-content ol { margin-left: 24px; margin-bottom: 18px; }
+    .article-content li { margin-bottom: 10px; }
+    .article-content strong { color: var(--dark); font-weight: 600; }
+    .highlight { background: rgba(217,26,14,.1); padding: 20px; border-left: 4px solid var(--red); margin: 24px 0; border-radius: 8px; }
+    .cta-box { background: var(--card); border: 1.5px solid rgba(0,0,0,.09); border-radius: 12px; padding: 28px; margin-top: 48px; text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,.07); }
+    .cta-box h3 { color: var(--dark); margin-bottom: 12px; }
+    .cta-box p { color: var(--muted); margin-bottom: 16px; }
+    .cta-btn { display: inline-block; background: var(--red); color: #fff; padding: 12px 28px; border-radius: 50px; font-weight: 600; transition: opacity .2s; }
+    .cta-btn:hover { opacity: .85; }
+    footer { background: var(--dark); color: #fff; padding: 40px 24px 20px; margin-top: 60px; text-align: center; font-size: 0.8rem; }
+    footer a { color: rgba(255,255,255,.65); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="logo_transparent.png" alt="IDI Aquitaine" />
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#pourquoi">Expertise</a></li>
+      <li><a href="index.html#realisations">Réalisations</a></li>
+      <li><a href="index.html#avis">Avis</a></li>
+      <li><a href="blog.html" style="color:var(--red);font-weight:600;">Blog</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<article class="article">
+  <h1>Test Blower Door : Mesure Technique de l'Étanchéité à l'Air</h1>
+  <div class="article-meta">
+    <span>📅 1 mars 2024</span>
+    <span>⏱ 6 min</span>
+    <span>✍️ IDI Aquitaine</span>
+  </div>
+
+  <div class="article-content">
+    <p>Le <strong>test Blower Door</strong> est la méthode de référence internationalement reconnue pour mesurer l'étanchéité à l'air d'un bâtiment. Norme ISO 13829, il fournit un chiffre objectif (Q₄Pa) permettant d'évaluer la performance énergétique. Comprendre son fonctionnement est essentiel pour les professionnels et propriétaires.</p>
+
+    <h2>Qu'est-ce qu'un Blower Door ?</h2>
+    <p>Un Blower Door est un équipement de mesure composé de :</p>
+    <ul>
+      <li><strong>Un ventilateur puissant</strong> capable de créer une dépression jusqu'à -50 Pascals</li>
+      <li><strong>Un manomètre différentiel</strong> mesurant la pression entre intérieur et extérieur</li>
+      <li><strong>Un débitmètre numérique</strong> enregistrant le débit d'air en temps réel</li>
+      <li><strong>Un logiciel d'analyse</strong> calculant le Q₄Pa et générant un rapport détaillé</li>
+    </ul>
+
+    <h2>Protocole du test : étapes clés</h2>
+    <h3>Préparation</h3>
+    <ul>
+      <li>Tous les ouvrants (fenêtres, portes) sont fermés</li>
+      <li>Les systèmes de ventilation (VMC) peuvent être arrêtés ou maintenus selon le protocole</li>
+      <li>L'équipement est installé sur une porte ou fenêtre</li>
+    </ul>
+
+    <h3>Test primaire</h3>
+    <ul>
+      <li>Le Blower Door crée une dépression progressive jusqu'à -10 Pascals</li>
+      <li>Le logiciel enregistre le débit d'air à plusieurs niveaux de pression</li>
+      <li>Cette phase identifie les grandes fuites</li>
+    </ul>
+
+    <h3>Test à -4 Pa</h3>
+    <ul>
+      <li>Le ventilateur maintient une dépression de <strong>-4 Pascals</strong></li>
+      <li>La mesure calcule le Q₄Pa (débit d'air en m³ par heure par m² de surface enveloppe)</li>
+      <li>C'est cet indice qui doit respecter les seuils RT2012 ou RE2020</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Qu'est-ce que -4 Pascals ?</strong> C'est une dépression très légère (~0,04 mbar), comparable à la dépression naturelle due au vent ou aux écarts de température. C'est pourquoi cet indice reflète les conditions réelles de fuite.
+    </div>
+
+    <h2>Interprétation des résultats</h2>
+    <p>Les résultats Blower Door se lisent sur l'indice <strong>Q₄Pa</strong> :</p>
+    <ul>
+      <li><strong>Q₄Pa = 1 à 3 :</strong> Excellent (construction très étanche, bâtiments Passivhaus)</li>
+      <li><strong>Q₄Pa = 4 à 6 :</strong> Bon (conforme RE2020 et RT2012)</li>
+      <li><strong>Q₄Pa = 7 à 10 :</strong> Acceptable (ancien standard, rénovation)</li>
+      <li><strong>Q₄Pa > 10 :</strong> Mauvais (forte infiltration, travaux nécessaires)</li>
+    </ul>
+
+    <h2>Localisation des fuites</h2>
+    <p>Le test Blower Door classique donne un chiffre global. Pour localiser les fuites :</p>
+    <ul>
+      <li>✅ <strong>Thermographie infrarouge :</strong> Détecte les variations de température (points de fuite)</li>
+      <li>✅ <strong>Fumigène :</strong> Détecte visuellement le chemin de l'air (très efficace)</li>
+      <li>✅ <strong>Aérogel :</strong> Poudre qui révèle les appels d'air</li>
+    </ul>
+
+    <h2>Durée et coûts du test</h2>
+    <ul>
+      <li><strong>Durée :</strong> 1 à 3 heures selon la taille du bâtiment</li>
+      <li><strong>Coût :</strong> Entre 800 € et 2 500 € (maison individuelle à immeuble collectif)</li>
+      <li><strong>Norme :</strong> ISO 13829 (reconnaissance internationale)</li>
+    </ul>
+
+    <h2>Conditions de réalisation</h2>
+    <p>Pour un test de qualité :</p>
+    <ul>
+      <li>🌡️ Différence de température > 5°C entre intérieur et extérieur (idéal en hiver)</li>
+      <li>💨 Vitesse du vent < 3-4 m/s (arrêter le test si vent trop fort)</li>
+      <li>⏱️ Test sur un bâtiment fermé depuis au moins 30 min</li>
+      <li>✅ En phase finale de construction (après isolation, avant finitions)</li>
+    </ul>
+
+    <h2>Conformité et certification</h2>
+    <p>Le test Blower Door génère un <strong>rapport certifié</strong> incluant :</p>
+    <ul>
+      <li>📊 Courbe de dépression (graphique pression/débit)</li>
+      <li>📐 Calcul du Q₄Pa</li>
+      <li>🗺️ Localisation des zones de fuite majeure</li>
+      <li>📋 Avis de conformité ou non-conformité</li>
+    </ul>
+
+    <h2>Avantages long terme</h2>
+    <ul>
+      <li>💰 Économies énergétiques : réduction de 20-30% de chauffage</li>
+      <li>🏠 Confort amélioré : moins de courants d'air</li>
+      <li>🌬️ Qualité de l'air : moins d'infiltrations non contrôlées</li>
+      <li>📜 Certification du bien : obligatoire pour RT2012/RE2020</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Le Blower Door n'est pas un luxe, c'est un <strong>investissement dans la durabilité et le confort</strong> de votre bâtiment. Une bonne étanchéité à l'air signifie moins d'énergie gaspillée et plus d'argent économisé chaque année.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3>Réalisez votre test Blower Door</h3>
+    <p>IDI Aquitaine effectue des tests Blower Door professionnels avec rapport ISO 13829 et localisation des fuites.</p>
+    <a href="index.html#contact" class="cta-btn">Demander un test d'infiltrométrie</a>
+  </div>
+</article>
+
+<footer>
+  <p>© 2025 IDI Aquitaine – Jérémie Autet. Tous droits réservés. | <a href="index.html">Accueil</a> | <a href="blog.html">Blog</a> | <a href="index.html#contact">Contact</a></p>
+</footer>
+
+<script>
+  /* ── Burger menu ── */
+  const burger   = document.getElementById('nav-burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    burger.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+
+  /* Ferme le menu mobile au clic sur un lien */
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

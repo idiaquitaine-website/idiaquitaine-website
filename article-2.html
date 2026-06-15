@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RT2012 : Conformité Infiltrométrie – Seuils et Exigences</title>
+  <meta name="description" content="Guide RT2012 : étanchéité à l'air, seuils de conformité, test Blower Door. Tout ce qu'il faut savoir pour valider la conformité de votre bâtiment." />
+  <link rel="canonical" href="https://idiaquitaine.fr/article-2.html" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <!-- Google Analytics 4 ────────────────────────────────── -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Schema.org Article ─────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "RT2012 : Conformité Infiltrométrie – Seuils et Exigences",
+    "description": "Guide RT2012 : étanchéité à l'air, seuils de conformité, test Blower Door. Tout ce qu'il faut savoir pour valider la conformité de votre bâtiment.",
+    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=320&fit=crop",
+    "author": {"@type": "Organization", "name": "IDI Aquitaine", "url": "https://idi-aquitaine.fr"},
+    "publisher": {"@type": "Organization", "name": "IDI Aquitaine", "logo": {"@type": "ImageObject", "url": "https://idi-aquitaine.fr/logo.png"}},
+    "datePublished": "2025-11-07",
+    "dateModified": "2025-11-07"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --dark: #1c1c1c; --text: #2a2a2a; --muted: #6b6b6b; --red: #d91a0e; --bg: #f5f4f0; --card: #fff; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+    a { color: var(--red); text-decoration: none; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0,0,0,0.09);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 95px;
+      position: relative;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo img { height: 112px; width: auto; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover { color: var(--dark); }
+    .nav-cta { background: var(--red); color: #fff !important; padding: 9px 22px; border-radius: 50px; font-weight: 600 !important; }
+
+    .nav-burger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 8px;
+      align-items: center; justify-content: center;
+    }
+    .nav-burger span {
+      width: 24px; height: 2.5px; background: var(--dark);
+      border-radius: 2px; transition: all .3s ease;
+    }
+    .nav-burger.is-open span:nth-child(1) { transform: rotate(45deg) translate(7px, 8px); }
+    .nav-burger.is-open span:nth-child(2) { opacity: 0; }
+    .nav-burger.is-open span:nth-child(3) { transform: rotate(-45deg) translate(8px, -7px); }
+
+    @media (max-width: 768px) {
+      .nav-burger { display: flex; }
+      .nav-links.is-open { display: flex; }
+      .nav-links {
+        display: none;
+        position: fixed; top: 95px; left: 0; right: 0;
+        flex-direction: column; gap: 0;
+        background: rgba(255,255,255,0.98);
+        backdrop-filter: blur(14px);
+        padding: 24px;
+        z-index: 101;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.09); }
+    }
+    .article { max-width: 800px; margin: 100px auto 60px; padding: 0 24px; }
+    .article h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.4rem; font-weight: 800; margin-bottom: 20px; color: var(--dark); line-height: 1.2; }
+    .article-meta { display: flex; gap: 20px; color: var(--muted); font-size: 0.9rem; margin-bottom: 30px; padding-bottom: 24px; border-bottom: 1px solid rgba(0,0,0,.09); }
+    .article-content { font-size: 1rem; }
+    .article-content h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 700; margin: 36px 0 18px; color: var(--dark); }
+    .article-content h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 24px 0 12px; color: var(--dark); }
+    .article-content p { margin-bottom: 18px; }
+    .article-content ul, .article-content ol { margin-left: 24px; margin-bottom: 18px; }
+    .article-content li { margin-bottom: 10px; }
+    .article-content strong { color: var(--dark); font-weight: 600; }
+    .highlight { background: rgba(217,26,14,.1); padding: 20px; border-left: 4px solid var(--red); margin: 24px 0; border-radius: 8px; }
+    .table-compare { width: 100%; margin: 24px 0; border-collapse: collapse; }
+    .table-compare th, .table-compare td { padding: 12px; border: 1px solid rgba(0,0,0,.1); text-align: left; }
+    .table-compare th { background: rgba(217,26,14,.05); font-weight: 600; }
+    .cta-box { background: var(--card); border: 1.5px solid rgba(0,0,0,.09); border-radius: 12px; padding: 28px; margin-top: 48px; text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,.07); }
+    .cta-box h3 { color: var(--dark); margin-bottom: 12px; }
+    .cta-box p { color: var(--muted); margin-bottom: 16px; }
+    .cta-btn { display: inline-block; background: var(--red); color: #fff; padding: 12px 28px; border-radius: 50px; font-weight: 600; transition: opacity .2s; }
+    .cta-btn:hover { opacity: .85; }
+    footer { background: var(--dark); color: #fff; padding: 40px 24px 20px; margin-top: 60px; text-align: center; font-size: 0.8rem; }
+    footer a { color: rgba(255,255,255,.65); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="logo_transparent.png" alt="IDI Aquitaine" />
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#pourquoi">Expertise</a></li>
+      <li><a href="index.html#realisations">Réalisations</a></li>
+      <li><a href="index.html#avis">Avis</a></li>
+      <li><a href="blog.html" style="color:var(--red);font-weight:600;">Blog</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<article class="article">
+  <h1>RT2012 : Conformité Infiltrométrie – Seuils et Exigences</h1>
+  <div class="article-meta">
+    <span>📅 8 mars 2024</span>
+    <span>⏱ 7 min</span>
+    <span>✍️ IDI Aquitaine</span>
+  </div>
+
+  <div class="article-content">
+    <p>La <strong>RT2012 (Réglementation Thermique 2012)</strong> s'applique encore à certains bâtiments et impose des exigences précises en matière d'étanchéité à l'air. Bien que la RE2020 la remplace progressivement, comprendre la RT2012 reste utile pour les constructions en cours et les diagnostics d'existant. Explications.</p>
+
+    <h2>Qu'est-ce que la RT2012 ?</h2>
+    <p>La RT2012 est la réglementation thermique française appliquée aux bâtiments neufs entre 2013 et 2021. Elle impose des seuils de <strong>consommation d'énergie primaire</strong> et de <strong>performance thermique</strong>. L'infiltrométrie (étanchéité à l'air) est un élément clé de cette conformité.</p>
+
+    <h2>Seuils d'infiltrométrie RT2012</h2>
+    <p>Contrairement à la RE2020, la RT2012 ne rend pas obligatoire le test Blower Door. Cependant, si vous l'effectuez, les seuils acceptables sont :</p>
+
+    <table class="table-compare">
+      <thead>
+        <tr>
+          <th>Type de bâtiment</th>
+          <th>Seuil Q₄Pa (RT2012)</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Immeubles collectifs</strong></td>
+          <td>≤ 6 m³/(h·m²)</td>
+          <td>Pour les bâtiments à plusieurs unités d'habitation</td>
+        </tr>
+        <tr>
+          <td><strong>Maisons individuelles</strong></td>
+          <td>≤ 8 m³/(h·m²)</td>
+          <td>Pour les maisons unifamiliales</td>
+        </tr>
+        <tr>
+          <td><strong>Bâtiments tertiaires</strong></td>
+          <td>≤ 6 m³/(h·m²)</td>
+          <td>Bureaux, commerces, etc.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      <strong>À noter :</strong> Les seuils RT2012 sont <em>moins stricts</em> que la RE2020 (3-4 m³/(h·m²)). C'est pourquoi les nouvelles constructions sous RE2020 demandent une meilleure étanchéité.
+    </div>
+
+    <h2>Quand le test Blower Door est-il obligatoire sous RT2012 ?</h2>
+    <ul>
+      <li>✅ Pour les bâtiments résidentiels neufs (selon étude thermique)</li>
+      <li>✅ Pour les ERP (Établissements Recevant du Public) et bâtiments tertiaires</li>
+      <li>❌ Non systématiquement obligatoire pour les maisons individuelles</li>
+      <li>❌ Non obligatoire pour les rénovations partielles</li>
+    </ul>
+
+    <h2>Écarts importants : pourquoi la conformité échoue</h2>
+    <p>Voici les raisons fréquentes d'un test Blower Door non-conforme :</p>
+    <ul>
+      <li><strong>Joints mal scellés :</strong> Fenêtres, portes, seuils mal calfeutrés</li>
+      <li><strong>Pénétrations d'installations :</strong> Gaines de ventilation, canalisations non étanchéifiées</li>
+      <li><strong>Boîtes de prises électriques :</strong> Source majeure de fuites d'air</li>
+      <li><strong>Trappe d'accès combles :</strong> Très souvent mal étanche</li>
+      <li><strong>Défauts de continuité du pare-air :</strong> Interruptions dans la barrière étanche</li>
+      <li><strong>Portes de garage ou porte-fenêtres :</strong> Joints défectueux ou usés</li>
+    </ul>
+
+    <h2>Comment corriger une non-conformité ?</h2>
+    <ol>
+      <li><strong>Identifier les fuites :</strong> Thermographie infrarouge ou test primaire Blower Door</li>
+      <li><strong>Calfeutrer les zones :</strong> Utiliser des joints élastiques, membranes pare-vapeur, mousse expansive</li>
+      <li><strong>Refaire le test :</strong> Vérifier la conformité après corrections</li>
+      <li><strong>Valider le rapport :</strong> Conserver une trace pour le dossier du bien</li>
+    </ol>
+
+    <h2>RT2012 vs RE2020 : comprendre la transition</h2>
+    <p><strong>Important à savoir :</strong></p>
+    <ul>
+      <li>Les permis de construire avant fin 2021 pouvaient être construits en RT2012</li>
+      <li>Depuis janvier 2022, tous les neufs doivent être en RE2020</li>
+      <li>Les projets RT2012 en cours de construction avant fin 2021 peuvent se terminer en RT2012</li>
+      <li>La RE2020 impose des seuils plus stricts (pas de "bonne infiltrométrie" possible en lâchant)</li>
+    </ul>
+
+    <h2>Conseil : faire appel à un expert</h2>
+    <p>Pour assurer la conformité RT2012, nous recommandons :</p>
+    <ul>
+      <li>✅ Planifier le test dès la fin de gros œuvre</li>
+      <li>✅ Choisir un bureau d'études thermique qualifié</li>
+      <li>✅ Vérifier les accréditations COFRAC de l'expert</li>
+      <li>✅ Conserver tous les rapports pour le carnet de bord du bâtiment</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>La RT2012 marque une étape importante vers des bâtiments plus performants. Bien que moins exigeante que la RE2020, elle impose une réflexion sérieuse sur l'étanchéité et la qualité de construction. Si vous avez un projet RT2012, un test Blower Door professionnel garantit la conformité et la qualité à long terme.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3>Vérifiez votre conformité RT2012</h3>
+    <p>IDI Aquitaine réalise des tests Blower Door RT2012 et RE2020 avec rapport complet et conforme.</p>
+    <a href="index.html#contact" class="cta-btn">Demander un test d'infiltrométrie</a>
+  </div>
+</article>
+
+<footer>
+  <p>© 2025 IDI Aquitaine – Jérémie Autet. Tous droits réservés. | <a href="index.html">Accueil</a> | <a href="blog.html">Blog</a> | <a href="index.html#contact">Contact</a></p>
+</footer>
+
+<script>
+  /* ── Burger menu ── */
+  const burger   = document.getElementById('nav-burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    burger.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+
+  /* Ferme le menu mobile au clic sur un lien */
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

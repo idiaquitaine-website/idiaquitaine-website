@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RE2020 : Infiltrométrie et Test Blower Door expliqués – IDI Aquitaine</title>
+  <meta name="description" content="Guide complet sur la RE2020 et les exigences d'infiltrométrie. Découvrez le test Blower Door, les seuils d'acceptation, et pourquoi cette conformité est obligatoire." />
+  <link rel="canonical" href="https://idiaquitaine.fr/article-1.html" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <!-- Google Analytics 4 ────────────────────────────────── -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Schema.org Article ─────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "RE2020 : Infiltrométrie et Test Blower Door expliqués",
+    "description": "Guide complet sur la RE2020 et les exigences d'infiltrométrie. Découvrez le test Blower Door, les seuils d'acceptation, et pourquoi cette conformité est obligatoire.",
+    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=320&fit=crop",
+    "author": {"@type": "Organization", "name": "IDI Aquitaine", "url": "https://idi-aquitaine.fr"},
+    "publisher": {"@type": "Organization", "name": "IDI Aquitaine", "logo": {"@type": "ImageObject", "url": "https://idi-aquitaine.fr/logo.png"}},
+    "datePublished": "2025-11-14",
+    "dateModified": "2025-11-14"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --dark: #1c1c1c; --text: #2a2a2a; --muted: #6b6b6b; --red: #d91a0e; --bg: #f5f4f0; --card: #fff; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+    a { color: var(--red); text-decoration: none; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0,0,0,0.09);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 95px;
+      position: relative;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo img { height: 112px; width: auto; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover { color: var(--dark); }
+    .nav-cta { background: var(--red); color: #fff !important; padding: 9px 22px; border-radius: 50px; font-weight: 600 !important; }
+
+    .nav-burger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 8px;
+      align-items: center; justify-content: center;
+    }
+    .nav-burger span {
+      width: 24px; height: 2.5px; background: var(--dark);
+      border-radius: 2px; transition: all .3s ease;
+    }
+    .nav-burger.is-open span:nth-child(1) { transform: rotate(45deg) translate(7px, 8px); }
+    .nav-burger.is-open span:nth-child(2) { opacity: 0; }
+    .nav-burger.is-open span:nth-child(3) { transform: rotate(-45deg) translate(8px, -7px); }
+
+    @media (max-width: 768px) {
+      .nav-burger { display: flex; }
+      .nav-links.is-open { display: flex; }
+      .nav-links {
+        display: none;
+        position: fixed; top: 95px; left: 0; right: 0;
+        flex-direction: column; gap: 0;
+        background: rgba(255,255,255,0.98);
+        backdrop-filter: blur(14px);
+        padding: 24px;
+        z-index: 101;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.09); }
+    }
+
+    .article { max-width: 800px; margin: 100px auto 60px; padding: 0 24px; }
+    .article h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.4rem; font-weight: 800; margin-bottom: 20px; color: var(--dark); line-height: 1.2; }
+    .article-meta { display: flex; gap: 20px; color: var(--muted); font-size: 0.9rem; margin-bottom: 30px; padding-bottom: 24px; border-bottom: 1px solid rgba(0,0,0,.09); }
+    .article-content { font-size: 1rem; }
+    .article-content h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 700; margin: 36px 0 18px; color: var(--dark); }
+    .article-content h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 24px 0 12px; color: var(--dark); }
+    .article-content p { margin-bottom: 18px; }
+    .article-content ul, .article-content ol { margin-left: 24px; margin-bottom: 18px; }
+    .article-content li { margin-bottom: 10px; }
+    .article-content strong { color: var(--dark); font-weight: 600; }
+    .article-content em { color: var(--muted); font-style: italic; }
+    .highlight { background: rgba(217,26,14,.1); padding: 20px; border-left: 4px solid var(--red); margin: 24px 0; border-radius: 8px; }
+    .cta-box { background: var(--card); border: 1.5px solid rgba(0,0,0,.09); border-radius: 12px; padding: 28px; margin-top: 48px; text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,.07); }
+    .cta-box h3 { color: var(--dark); margin-bottom: 12px; }
+    .cta-box p { color: var(--muted); margin-bottom: 16px; }
+    .cta-btn { display: inline-block; background: var(--red); color: #fff; padding: 12px 28px; border-radius: 50px; font-weight: 600; transition: opacity .2s; }
+    .cta-btn:hover { opacity: .85; }
+
+    footer { background: var(--dark); color: #fff; padding: 40px 24px 20px; margin-top: 60px; text-align: center; font-size: 0.8rem; }
+    footer a { color: rgba(255,255,255,.65); }
+
+    @media (max-width: 640px) { nav { flex-direction: column; height: auto; padding: 12px 24px; gap: 12px; } .article h1 { font-size: 1.8rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="logo_transparent.png" alt="IDI Aquitaine" />
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#pourquoi">Expertise</a></li>
+      <li><a href="index.html#realisations">Réalisations</a></li>
+      <li><a href="index.html#avis">Avis</a></li>
+      <li><a href="blog.html" style="color:var(--red);font-weight:600;">Blog</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<article class="article">
+  <h1>RE2020 et infiltrométrie : ce que vous devez savoir</h1>
+  <div class="article-meta">
+    <span>📅 14 novembre 2025</span>
+    <span>⏱ 8 min</span>
+    <span>✍️ IDI Aquitaine</span>
+  </div>
+
+  <div class="article-content">
+    <p>Depuis janvier 2022, la RE2020 a remplacé la RT2012 pour les constructions neuves en France. C'est un changement important qui impose des exigences bien plus strictes en matière d'étanchéité à l'air. Si vous construisez ou rénover une maison, le test Blower Door devient un passage obligé. Voici tout ce qu'il faut comprendre.</p>
+
+    <h2>Qu'est-ce que la RE2020 ?</h2>
+    <p>La RE2020 est la nouvelle réglementation environnementale française pour les bâtiments neufs. Elle repose sur trois piliers :</p>
+    <ul>
+      <li><strong>L'énergie :</strong> consommer moins d'énergie primaire pour le chauffage et l'eau chaude</li>
+      <li><strong>Le confort :</strong> maintenir une bonne température en été sans climatisation systématique</li>
+      <li><strong>L'environnement :</strong> réduire l'impact carbone du bâtiment sur son cycle de vie</li>
+    </ul>
+    <p>Contrairement à la RT2012 qui se focalisait surtout sur les fuites de chaleur en hiver, la RE2020 adopte une approche plus large : elle regarde comment le bâtiment se comporte toute l'année et quel est son impact global sur l'environnement.</p>
+
+    <h2>L'infiltrométrie dans la RE2020 : un enjeu clé</h2>
+    <p>L'infiltrométrie (mesure de l'étanchéité à l'air d'un bâtiment) devient un paramètre central. Une mauvaise étanchéité signifie :</p>
+    <ul>
+      <li>Des déperditions thermiques involontaires (jusqu'à 25% de la chaleur)</li>
+      <li>Des appels d'air froid non contrôlés</li>
+      <li>Une augmentation de la consommation d'énergie</li>
+      <li>Des risques de condensation et d'humidité</li>
+    </ul>
+    <p>C'est pourquoi la RE2020 impose des seuils d'étanchéité plus stricts qu'auparavant :</p>
+    <ul>
+      <li><strong>Q₄Pa : ≤ 3 m³/(h·m²) pour l'immobilier collectif</strong></li>
+      <li><strong>Q₄Pa : ≤ 4 m³/(h·m²) pour l'habitat individuel</strong></li>
+    </ul>
+
+    <div class="highlight">
+      <strong>À retenir :</strong> Le Q₄Pa est le débit de fuite d'air (en m³ par heure) rapporté à 4 Pascals de dépression, divisé par la surface des parois. Plus ce chiffre est bas, plus le bâtiment est étanche.
+    </div>
+
+    <h2>Le test Blower Door : comment ça marche ?</h2>
+    <p>Le test Blower Door est <strong>l'unique méthode reconnue</strong> pour mesurer l'étanchéité à l'air d'un bâtiment. Voici son fonctionnement :</p>
+
+    <h3>Les étapes du test</h3>
+    <ol>
+      <li><strong>Installation :</strong> Un ventilateur puissant est installé dans une porte ou fenêtre pour créer une dépression contrôlée.</li>
+      <li><strong>Dépressurisation :</strong> Le bâtiment est mis en dépression (réduction de pression intérieure) à -4 Pascals.</li>
+      <li><strong>Mesure :</strong> Le logiciel calcule le débit d'air qui s'infiltre par toutes les fissures, joints, gaps, etc.</li>
+      <li><strong>Rapport :</strong> Un rapport détaillé indique le résultat (Q₄Pa) et localise les zones de fuite majeure.</li>
+    </ol>
+
+    <p>La durée du test est généralement de 1 à 3 heures selon la taille du bâtiment et le résultat.</p>
+
+    <h2>Quand le test Blower Door est-il obligatoire ?</h2>
+    <ul>
+      <li>✅ Pour toute <strong>construction neuve RE2020</strong></li>
+      <li>✅ Pour les bâtiments neufs soumis à RT2012 (jusqu'à fin 2023)</li>
+      <li>✅ Pour les rénovations complètes d'étanchéité à l'air</li>
+      <li>❌ Non obligatoire pour l'existant (sauf si vous effectuez des travaux d'isolation)</li>
+    </ul>
+
+    <h2>Que se passe-t-il si on ne respecte pas les seuils ?</h2>
+    <p>Si votre construction n'atteint pas le seuil requis :</p>
+    <ul>
+      <li><strong>Travaux correctifs obligatoires :</strong> Identification et calfeutrage des fuites (avec nouveau test)</li>
+      <li><strong>Impossibilité de demander le certificat de conformité</strong> (nécessaire pour la certification du bien)</li>
+      <li><strong>Responsabilité légale du constructeur/maître d'ouvrage</strong> en cas de non-respect</li>
+      <li><strong>Surcoûts et délais supplémentaires</strong> pour les corrections</li>
+    </ul>
+
+    <h2>Conseils pratiques : préparer un test Blower Door réussi</h2>
+    <ul>
+      <li>🔧 Respecter <strong>tous les détails d'exécution</strong> : joints, seuils, pénétrations d'installations</li>
+      <li>🏗️ Planifier le test <strong>après les travaux d'isolation et avant la décoration</strong></li>
+      <li>📋 Demander un <strong>expert certifié</strong> (vérifiez les accréditations COFRAC)</li>
+      <li>🌡️ Effectuer le test par <strong>conditions climatiques stables</strong> (pas de vent fort)</li>
+      <li>✅ Conserver le rapport pour le dossier du bien</li>
+    </ul>
+
+    <h2>L'infiltrométrie, un investissement rentable</h2>
+    <p>Bien que le test Blower Door représente un coût (entre 800 € et 2 500 € selon la taille), c'est un investissement rentable car :</p>
+    <ul>
+      <li>Une meilleure étanchéité = économies d'énergie à vie</li>
+      <li>Améliore la certification et la valeur immobilière du bien</li>
+      <li>Élimine les problèmes de confort (courants d'air, humidité)</li>
+      <li>Démontre une construction de qualité aux acheteurs/locataires</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>La RE2020 marque un tournant : l'étanchéité à l'air n'est plus un détail technique, c'est <strong>un élément fondamental de la qualité de construction</strong>. Le test Blower Door garantit que votre bien respecte les normes et vous protège contre les surcoûts énergétiques futurs.</p>
+    <p>Vous construisez un bâtiment neuf ? Consultez un expert en infiltrométrie pour un test sans défaut et une conformité RE2020 garantie.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3>Besoin d'un test Blower Door RE2020 ?</h3>
+    <p>IDI Aquitaine vous accompagne pour vérifier la conformité de votre construction et optimiser l'étanchéité de votre bien.</p>
+    <a href="index.html#contact" class="cta-btn">Demander un devis gratuit</a>
+  </div>
+</article>
+
+<footer>
+  <p>© 2025 IDI Aquitaine – Jérémie Autet. Tous droits réservés. | <a href="index.html">Accueil</a> | <a href="blog.html">Blog</a> | <a href="index.html#contact">Contact</a></p>
+</footer>
+
+<script>
+  /* ── Burger menu ── */
+  const burger   = document.getElementById('nav-burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    burger.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+
+  /* Ferme le menu mobile au clic sur un lien */
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

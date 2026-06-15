@@ -1,0 +1,11 @@
+# IDI Aquitaine robots.txt
+# https://idiaquitaine.fr
+
+User-agent: *
+Allow: /
+Disallow: /.well-known/
+Disallow: /admin/
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://idiaquitaine.fr/sitemap.xml

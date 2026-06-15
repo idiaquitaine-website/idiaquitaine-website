@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caméra Thermique Infrarouge : Détection Fuite, Pont Thermique, Infiltration</title>
+  <meta name="description" content="Comment fonctionne la thermographie infrarouge ? Détection de fuites, ponts thermiques, infiltrations d'air. Technologie et applications concrètes." />
+  <link rel="canonical" href="https://idiaquitaine.fr/article-6.html" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <!-- Google Analytics 4 ────────────────────────────────── -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Schema.org Article ─────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Caméra Thermique Infrarouge : Détection Fuite, Pont Thermique, Infiltration",
+    "description": "Comment fonctionne la thermographie infrarouge ? Détection de fuites, ponts thermiques, infiltrations d'air. Technologie et applications concrètes.",
+    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=320&fit=crop",
+    "author": {"@type": "Organization", "name": "IDI Aquitaine", "url": "https://idi-aquitaine.fr"},
+    "publisher": {"@type": "Organization", "name": "IDI Aquitaine", "logo": {"@type": "ImageObject", "url": "https://idi-aquitaine.fr/logo.png"}},
+    "datePublished": "2025-10-08",
+    "dateModified": "2025-10-08"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --dark: #1c1c1c; --text: #2a2a2a; --muted: #6b6b6b; --red: #d91a0e; --bg: #f5f4f0; --card: #fff; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+    a { color: var(--red); text-decoration: none; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0,0,0,0.09);
+      box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width: 1200px; margin: auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 95px;
+      position: relative;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo img { height: 112px; width: auto; }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--muted); transition: color .2s; }
+    .nav-links a:hover { color: var(--dark); }
+    .nav-cta { background: var(--red); color: #fff !important; padding: 9px 22px; border-radius: 50px; font-weight: 600 !important; }
+
+    .nav-burger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 8px;
+      align-items: center; justify-content: center;
+    }
+    .nav-burger span {
+      width: 24px; height: 2.5px; background: var(--dark);
+      border-radius: 2px; transition: all .3s ease;
+    }
+    .nav-burger.is-open span:nth-child(1) { transform: rotate(45deg) translate(7px, 8px); }
+    .nav-burger.is-open span:nth-child(2) { opacity: 0; }
+    .nav-burger.is-open span:nth-child(3) { transform: rotate(-45deg) translate(8px, -7px); }
+
+    @media (max-width: 768px) {
+      .nav-burger { display: flex; }
+      .nav-links.is-open { display: flex; }
+      .nav-links {
+        display: none;
+        position: fixed; top: 95px; left: 0; right: 0;
+        flex-direction: column; gap: 0;
+        background: rgba(255,255,255,0.98);
+        backdrop-filter: blur(14px);
+        padding: 24px;
+        z-index: 101;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.09); }
+    }
+    .article { max-width: 800px; margin: 100px auto 60px; padding: 0 24px; }
+    .article h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.4rem; font-weight: 800; margin-bottom: 20px; color: var(--dark); line-height: 1.2; }
+    .article-meta { display: flex; gap: 20px; color: var(--muted); font-size: 0.9rem; margin-bottom: 30px; padding-bottom: 24px; border-bottom: 1px solid rgba(0,0,0,.09); }
+    .article-content { font-size: 1rem; }
+    .article-content h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 700; margin: 36px 0 18px; color: var(--dark); }
+    .article-content h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 24px 0 12px; color: var(--dark); }
+    .article-content p { margin-bottom: 18px; }
+    .article-content ul { margin-left: 24px; margin-bottom: 18px; }
+    .article-content li { margin-bottom: 10px; }
+    .highlight { background: rgba(217,26,14,.1); padding: 20px; border-left: 4px solid var(--red); margin: 24px 0; border-radius: 8px; }
+    .cta-box { background: var(--card); border: 1.5px solid rgba(0,0,0,.09); border-radius: 12px; padding: 28px; margin-top: 48px; text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,.07); }
+    .cta-btn { display: inline-block; background: var(--red); color: #fff; padding: 12px 28px; border-radius: 50px; font-weight: 600; }
+    footer { background: var(--dark); color: #fff; padding: 40px 24px 20px; margin-top: 60px; text-align: center; font-size: 0.8rem; }
+    footer a { color: rgba(255,255,255,.65); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="logo_transparent.png" alt="IDI Aquitaine" />
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#pourquoi">Expertise</a></li>
+      <li><a href="index.html#realisations">Réalisations</a></li>
+      <li><a href="index.html#avis">Avis</a></li>
+      <li><a href="blog.html" style="color:var(--red);font-weight:600;">Blog</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Devis gratuit</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<article class="article">
+  <h1>Caméra Thermique : Détection Infrarouge de Fuites et Ponts Thermiques</h1>
+  <div class="article-meta">
+    <span>📅 8 février 2024</span>
+    <span>⏱ 6 min</span>
+    <span>✍️ IDI Aquitaine</span>
+  </div>
+
+  <div class="article-content">
+    <p>La <strong>caméra thermique infrarouge</strong> (ou thermographie) est l'outil privilégié des diagnostics immobiliers modernes. Elle révèle l'invisible : fuites d'eau, infiltrations d'air, ponts thermiques. Comment fonctionne cette technologie ?</p>
+
+    <h2>Le Principe : Voir la Chaleur</h2>
+    <p>Tout objet à température > 0K émet un rayonnement infrarouge. La caméra capte ces rayons (invisibles à l'oeil) et les convertit en image en fausses couleurs :</p>
+    <ul>
+      <li><strong>Rouge/Orange</strong> = zones chaudes (consomme de l'énergie)</li>
+      <li><strong>Bleu/Violet</strong> = zones froides (déperdition thermique)</li>
+      <li><strong>Vert/Jaune</strong> = zones intermédiaires</li>
+    </ul>
+
+    <h2>Applications Principales</h2>
+
+    <h3>1. Détection de Fuites d'Eau</h3>
+    <p>L'eau est plus froide que les murs. Une fuite = zone refroidie visible à la thermographie. Très utile pour localisez une infiltration avant la démolition.</p>
+
+    <h3>2. Repérage des Ponts Thermiques</h3>
+    <p>Pont thermique = zone d'isolation insuffisante. Responsable de 30% des déperditions énergétiques. La caméra les identifie en bleu/violet.</p>
+
+    <h3>3. Évaluation de l'Infiltration d'Air</h3>
+    <p>L'air non contrôlé refroidit les zones. Les fuites d'air deviennent visibles en hiver (différence de température).</p>
+
+    <h3>4. Diagnostic de Conformité Énergétique</h3>
+    <p>Évaluation globale des déperditions : roof, façade, fenêtres, sous-sol.</p>
+
+    <div class="highlight">
+      <strong>Important :</strong> La thermographie fonctionne mieux en <strong>hiver</strong> (écart thermique > 15°C entre intérieur et extérieur). Difficulté en été.
+    </div>
+
+    <h2>Spécifications de la Caméra Infrarouge Pro</h2>
+    <ul>
+      <li>✅ Résolution : 320x256 pixels minimum</li>
+      <li>✅ Sensibilité thermique : < 0.05°C</li>
+      <li>✅ Gamme : -20°C à +350°C</li>
+      <li>✅ Calibration annuelle obligatoire</li>
+    </ul>
+
+    <h2>Avantages & Limites</h2>
+    <ul>
+      <li>✅ Non-destructif, rapide</li>
+      <li>✅ Génère un rapport photographique</li>
+      <li>❌ Dépend des conditions climatiques</li>
+      <li>❌ Demande un opérateur qualifié</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>La caméra thermique est un incontournable du diagnostic moderne. Indispensable pour les infiltrations suspectes et l'audit énergétique.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3>Besoin d'une thermographie ?</h3>
+    <p>IDI Aquitaine utilise caméra FLIR professionnelle avec rapport complet.</p>
+    <a href="index.html#contact" class="cta-btn">Demander un diagnostic thermique</a>
+  </div>
+</article>
+
+<footer>
+  <p>© 2025 IDI Aquitaine – Jérémie Autet. Tous droits réservés. | <a href="index.html">Accueil</a> | <a href="blog.html">Blog</a></p>
+</footer>
+
+<script>
+  /* ── Burger menu ── */
+  const burger   = document.getElementById('nav-burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    burger.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+
+  /* Ferme le menu mobile au clic sur un lien */
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

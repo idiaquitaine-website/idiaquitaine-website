@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Responsive – IDI Aquitaine</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #1c1c1c; color: #fff; padding: 20px; }
+    .controls {
+      background: #2a2a2a; padding: 20px; border-radius: 8px; margin-bottom: 20px;
+      display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+    }
+    button {
+      background: #d91a0e; color: #fff; border: none; padding: 10px 16px; border-radius: 6px;
+      cursor: pointer; font-weight: 600; transition: opacity .2s;
+    }
+    button:hover { opacity: .85; }
+    button.active { background: #2e7d32; }
+    .iframe-container {
+      background: #fff; border-radius: 8px; overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,.3);
+      display: flex; flex-direction: column;
+    }
+    .device-info {
+      background: #333; color: #aaa; padding: 12px; font-size: .85rem;
+      text-align: center; border-bottom: 1px solid #444;
+    }
+    iframe { border: none; width: 100%; flex: 1; }
+    .wrapper {
+      max-width: 100%;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .device { flex: 1; min-width: 320px; max-width: 1200px; }
+  </style>
+</head>
+<body>
+
+<div class="controls">
+  <strong>Simuler :</strong>
+  <button class="active" data-width="1920" data-height="1080">💻 Desktop</button>
+  <button data-width="1024" data-height="768">⌗ Tablet</button>
+  <button data-width="768" data-height="1024">⌗ Tablet Portrait</button>
+  <button data-width="428" data-height="926">📱 iPhone (14)</button>
+  <button data-width="375" data-height="812">📱 iPhone (12)</button>
+  <button data-width="600" data-height="800">📱 Android</button>
+</div>
+
+<div class="wrapper">
+  <div class="device" id="device">
+    <div class="iframe-container">
+      <div class="device-info" id="info">Desktop (1920 × 1080)</div>
+      <iframe id="frame" src="index.html"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.controls button');
+  const frame = document.getElementById('frame');
+  const info = document.getElementById('info');
+  const device = document.getElementById('device');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const width = btn.dataset.width;
+      const height = btn.dataset.height;
+      const names = {
+        '1920': '💻 Desktop',
+        '1024': '⌗ Tablet',
+        '768': '⌗ Tablet Portrait',
+        '428': '📱 iPhone 14',
+        '375': '📱 iPhone 12',
+        '600': '📱 Android'
+      };
+
+      device.style.maxWidth = width + 'px';
+      info.textContent = (names[width] || 'Custom') + ` (${width} × ${height})`;
+
+      // Force iframe refresh pour le viewport
+      frame.style.height = height + 'px';
+    });
+  });
+
+  // Défaut
+  device.style.maxWidth = '1920px';
+</script>
+
+</body>
+</html>
