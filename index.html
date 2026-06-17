@@ -273,6 +273,8 @@
     }
     .hero-stat .hs-num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.9rem; font-weight: 800; color: #fff; }
     .hero-stat .hs-label { font-size: .75rem; color: rgba(255,255,255,0.55); margin-top: 2px; }
+    .hr-avatar { width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0; }
+    .hr-text { font-size:.75rem;color:var(--muted);margin-top:3px;line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical; }
 
     /* ── SECTION COMMON ── */
     section { padding: 90px 24px; }
@@ -723,6 +725,29 @@
         <div class="hero-stat">
           <div class="hs-num"><span>48h</span></div>
           <div class="hs-label">Rapport remis</div>
+        </div>
+      </div>
+      <div id="hero-reviews" style="background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-top:10px;display:flex;flex-direction:column;gap:10px;min-height:96px;">
+        <div class="hr-slot" id="hr-slot-0" style="display:flex;align-items:flex-start;gap:10px;transition:opacity .4s;">
+          <div class="hr-avatar" style="background:#4285f4;">M</div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <span class="hr-name" style="font-size:.78rem;font-weight:700;color:var(--dark);">Marie D.</span>
+              <span style="color:#F5A623;font-size:.75rem;">★★★★★</span>
+            </div>
+            <div class="hr-text">"Très professionnel, ponctuel, rapport envoyé le lendemain. Je recommande vivement !"</div>
+          </div>
+        </div>
+        <div style="height:1px;background:var(--border);"></div>
+        <div class="hr-slot" id="hr-slot-1" style="display:flex;align-items:flex-start;gap:10px;transition:opacity .4s;">
+          <div class="hr-avatar" style="background:#34A853;">T</div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <span class="hr-name" style="font-size:.78rem;font-weight:700;color:var(--dark);">Thomas L.</span>
+              <span style="color:#F5A623;font-size:.75rem;">★★★★★</span>
+            </div>
+            <div class="hr-text">"Excellente prestation, prend le temps d'expliquer les résultats. Très sérieux."</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1743,6 +1768,40 @@
     const firstItem = document.querySelector('.dd-item');
     if (firstItem) firstItem.classList.add('open');
   });
+
+  /* ── Rotateur mini-avis hero ── */
+  const heroReviews = [
+    { initiale: 'M', couleur: '#4285f4', nom: 'Marie D.', texte: '"Très professionnel, ponctuel, rapport envoyé le lendemain. Je recommande vivement !"' },
+    { initiale: 'T', couleur: '#34A853', nom: 'Thomas L.', texte: '"Excellente prestation, prend le temps d\'expliquer les résultats. Très sérieux."' },
+    { initiale: 'S', couleur: '#EA4335', nom: 'Sophie M.', texte: '"Recherche de fuite résolue en quelques heures sans aucune démolition. Résultat bluffant !"' },
+  ];
+
+  function setHeroSlot(slotEl, review) {
+    slotEl.querySelector('.hr-avatar').style.background = review.couleur;
+    slotEl.querySelector('.hr-avatar').textContent = review.initiale;
+    slotEl.querySelector('.hr-name').textContent = review.nom;
+    slotEl.querySelector('.hr-text').textContent = review.texte;
+  }
+
+  (function initHeroRotator() {
+    const slot0 = document.getElementById('hr-slot-0');
+    const slot1 = document.getElementById('hr-slot-1');
+    if (!slot0 || !slot1) return;
+
+    let idx = 0;
+
+    setInterval(() => {
+      const next0 = (idx + 1) % heroReviews.length;
+      const next1 = (idx + 2) % heroReviews.length;
+      [slot0, slot1].forEach(s => s.style.opacity = '0');
+      setTimeout(() => {
+        setHeroSlot(slot0, heroReviews[next0]);
+        setHeroSlot(slot1, heroReviews[next1]);
+        [slot0, slot1].forEach(s => s.style.opacity = '1');
+        idx = next0;
+      }, 400);
+    }, 5000);
+  })();
 </script>
 
 </body>
