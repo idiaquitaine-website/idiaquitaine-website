@@ -1451,7 +1451,7 @@
             <input type="checkbox" id="f-rgpd" name="rgpd" required style="width:auto;margin-top:3px;flex-shrink:0;" />
             <label for="f-rgpd" style="font-weight:400;font-size:.8rem;color:var(--muted);cursor:pointer;">
               J'accepte que mes données soient utilisées pour traiter ma demande de devis, conformément à la
-              <a href="politique-confidentialite.html" style="color:var(--red);">politique de confidentialité</a>.
+              <a href="politique-confidentialite.html" style="color:var(--red);">politique de confidentialité</a>. <span style="color:var(--red);font-weight:700;">*</span>
             </label>
           </div>
           <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
@@ -1459,6 +1459,15 @@
           </button>
           <div class="form-feedback" id="form-feedback"></div>
         </form>
+        <div id="form-success" style="display:none;text-align:center;padding:32px 16px;">
+          <div style="font-size:3rem;margin-bottom:16px;">✅</div>
+          <h4 style="font-family:'Syne',sans-serif;font-size:1.25rem;font-weight:700;margin-bottom:12px;color:var(--dark);">Merci <span id="success-prenom"></span>, votre demande a bien été envoyée !</h4>
+          <p style="color:var(--muted);font-size:.9rem;margin-bottom:8px;">Nous vous répondons sous <strong>2h en journée</strong>.</p>
+          <p style="color:var(--muted);font-size:.85rem;margin-bottom:28px;">Un email de confirmation a été envoyé à votre adresse.</p>
+          <button onclick="document.getElementById('form-success').style.display='none';document.getElementById('contact-form').style.display='block';document.getElementById('contact-form').reset();" style="background:none;border:1px solid var(--muted);border-radius:8px;padding:8px 20px;font-size:.85rem;color:var(--muted);cursor:pointer;">
+            Envoyer une nouvelle demande
+          </button>
+        </div>
       </div>
 
     </div>
@@ -1653,9 +1662,9 @@
       });
 
       if (response.ok) {
-        feedback.textContent = '✅ Votre demande a bien été envoyée ! Nous vous répondons sous 2h en journée.';
-        feedback.className = 'form-feedback success';
-        form.reset();
+        document.getElementById('success-prenom').textContent = prenom;
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
       } else {
         const data = await response.json();
         throw new Error(data.error || 'Erreur serveur');
