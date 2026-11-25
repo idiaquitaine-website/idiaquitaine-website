@@ -1,0 +1,9 @@
+# Fichiers de travail internes : ne jamais publier sur le site
+*.md
+*.sh
+*.pdf
+CHECKLIST-FINAL.txt
+test-*.html
+guide-search-console-*.html
+Carte de visite*.png
+.claude/
