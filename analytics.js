@@ -9,7 +9,7 @@
      propriété GA4 (Admin → Flux de données → ID de mesure, « G-… »).
    ───────────────────────────────────────────────────────────── */
 (function () {
-  var GA_ID = 'G-XXXXXXXXXX';
+  var GA_ID = 'G-HLDRQYQLW5';
   var KEY = 'rgpd_consent';
   var configured = /^G-[A-Z0-9]+$/.test(GA_ID) && GA_ID !== 'G-XXXXXXXXXX';
   var loaded = false;
