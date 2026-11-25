@@ -31,14 +31,6 @@
   <meta property="og:locale"      content="fr_FR" />
   <meta name="twitter:card"       content="summary_large_image" />
 
-  <!-- Google Analytics 4 ────────────────────────────────────────── -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
 
   <!-- Fonts ───────────────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -692,6 +684,7 @@
       .matrix-table td          { padding: 14px 12px; font-size: 0.8rem; }
     }
   </style>
+  <script src="analytics.js" defer></script>
 </head>
 <body>
 
@@ -1520,8 +1513,8 @@
 <!-- ─── BANDEAU RGPD ─── -->
 <div id="rgpd-banner" role="dialog" aria-label="Consentement cookies">
   <p>
-    Ce site utilise des cookies techniques nécessaires à son fonctionnement (formulaire de contact via Formspree).
-    Aucune donnée n'est vendue à des tiers. En continuant, vous acceptez leur utilisation.
+    Avec votre accord, nous utilisons des cookies de mesure d'audience (Google Analytics) pour savoir comment le site est consulté et l'améliorer.
+    Les cookies techniques nécessaires au fonctionnement du site (formulaire de contact) sont toujours actifs.
     <a href="politique-confidentialite.html">En savoir plus</a>.
   </p>
   <div class="rgpd-btns">
@@ -1663,17 +1656,7 @@
     }
   });
 
-  /* ── Bannière RGPD ── */
-  const banner = document.getElementById('rgpd-banner');
-
-  function rgpdConsent(accepted) {
-    localStorage.setItem('rgpd_consent', accepted ? 'accepted' : 'refused');
-    banner.style.display = 'none';
-  }
-
-  if (localStorage.getItem('rgpd_consent')) {
-    banner.style.display = 'none';
-  }
+  /* ── Bannière RGPD : gérée par analytics.js ── */
 
   /* ── Modals légaux ── */
 
